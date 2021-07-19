@@ -1,0 +1,61 @@
+﻿:host InfoContainer[light-bg] {
+  background: #f9f9f9; }
+
+:host InfoContainer {
+  background: #96adc2;
+  display: grid;
+  justify-content: center; }
+  :host InfoContainer vi-grid {
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    :host InfoContainer vi-grid ColumnText,
+    :host InfoContainer vi-grid ColumnImg {
+      margin-bottom: 15px;
+      padding: 0 15px;
+      max-width: 540px;
+      width: 100%; }
+      :host InfoContainer vi-grid ColumnText .video-player,
+      :host InfoContainer vi-grid ColumnImg .video-player {
+        width: 555px;
+        height: 312px; }
+      :host InfoContainer vi-grid ColumnText TextWrapper,
+      :host InfoContainer vi-grid ColumnImg TextWrapper {
+        padding-bottom: 60px; }
+        :host InfoContainer vi-grid ColumnText TextWrapper TopLine,
+        :host InfoContainer vi-grid ColumnImg TextWrapper TopLine {
+          display: flex;
+          color: #0c4c86;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 700;
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+          margin-bottom: 16px; }
+        :host InfoContainer vi-grid ColumnText TextWrapper Heading,
+        :host InfoContainer vi-grid ColumnImg TextWrapper Heading {
+          display: flex;
+          margin-bottom: 24px;
+          font-size: 20px;
+          line-height: 1.1;
+          font-weight: 600;
+          /*color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};*/ }
+        :host InfoContainer vi-grid ColumnText TextWrapper Heading[light-text],
+        :host InfoContainer vi-grid ColumnImg TextWrapper Heading[light-text] {
+          color: #f7f8fa; }
+        :host InfoContainer vi-grid ColumnText TextWrapper Description,
+        :host InfoContainer vi-grid ColumnImg TextWrapper Description {
+          /*max-width: 440px;*/
+          font-size: 13px;
+          line-height: 24px;
+          color: #fff; }
+        :host InfoContainer vi-grid ColumnText TextWrapper Description[dark-text],
+        :host InfoContainer vi-grid ColumnImg TextWrapper Description[dark-text] {
+          color: #010606; }
+      :host InfoContainer vi-grid ColumnText img,
+      :host InfoContainer vi-grid ColumnImg img {
+        width: 100%; }

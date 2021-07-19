@@ -1,0 +1,22 @@
+﻿{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "removeComments": true,
+    "emitBOM": false,
+    "noEmitOnError": false,
+    "noEmitHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "alwaysStrict": true,
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "files": [
+    "Scripts/typings/vidyano/vidyano.d.ts"
+
+  ]
+}

@@ -1,0 +1,91 @@
+﻿<dom-module id="rhea-page-section">
+    <template>
+        <link rel="stylesheet" href="page-section.css" />
+        <!-- todo -->
+        <!-- items should be rendered in a dom-repeat template -->
+        <template is="dom-repeat" items="{{query.items}}" as="info">
+            <template is="dom-if" if="[[info.values.LightBg]]">
+                <InfoContainer light-bg>
+                    <vi-grid>
+                        <template is="dom-if" if="[[info.values.ImgStart]]">
+                            <ColumnImg class="animate__animated animate__fadeInLeft animate__delay-1s">
+                               <template is="dom-if" if="[[info.values.Image]]">
+                                    <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
+                                </template>
+                                <template is="dom-if" if="[[info.values.VideoUrl]]">
+                                    <iframe src="[[info.values.VideoUrl]]" width = "510" height = "287" frameborder="0"></iframe>
+                                </template>
+                            </ColumnImg>
+                            <ColumnText class="animate__animated animate__fadeInRight animate__delay-1s">
+                                <TextWrapper>
+                                    <TopLine>[[info.values.TopLine]]</TopLine>
+                                    <Heading>[[info.values.Headline]]</Heading>
+                                    <Description dark-text>[[info.values.Description]]</Description>
+                                </TextWrapper>
+                            </ColumnText>
+                        </template>
+                        <template is="dom-if" if="[[!info.values.ImgStart]]">
+                            <ColumnText class="animate__animated animate__fadeInLeft animate__delay-1s">
+                                <TextWrapper>
+                                    <TopLine>[[info.values.TopLine]]</TopLine>
+                                    <Heading>[[info.values.Headline]]</Heading>
+                                    <Description dark-text>[[info.values.Description]]</Description>
+                                </TextWrapper>
+                            </ColumnText>
+                            <ColumnImg class="animate__animated animate__fadeInRight animate__delay-1s">
+                                <template is="dom-if" if="[[info.values.Image]]">
+                                    <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
+                                </template>
+                                <template is="dom-if" if="[[info.values.VideoUrl]]">
+                                    <iframe src="[[info.values.VideoUrl]]" width = "510" height = "287" frameborder="0"></iframe>
+                                </template>
+                            </ColumnImg>
+                        </template>
+                    </vi-grid>
+                </InfoContainer>
+            </template>
+             <template is="dom-if" if="[[!info.values.LightBg]]">
+                <InfoContainer>
+                    <vi-grid>
+                        <template is="dom-if" if="[[info.values.ImgStart]]">
+                            <ColumnImg class="animate__animated animate__fadeInLeft animate__delay-1s">
+                                <template is="dom-if" if="[[info.values.Image]]">
+                                    <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
+                                </template>
+                                <template is="dom-if" if="[[info.values.VideoUrl]]">
+                                    <iframe src="[[info.values.VideoUrl]]" width = "510" height = "287" frameborder="0"></iframe>
+                                </template>
+                            </ColumnImg>
+                            <ColumnText class="animate__animated animate__fadeInRight animate__delay-1s">
+                                <TextWrapper>
+                                    <TopLine>[[info.values.TopLine]]</TopLine>
+                                    <Heading light-text>[[info.values.Headline]]</Heading>
+                                    <Description>[[info.values.Description]]</Description>
+                                </TextWrapper>
+                            </ColumnText>
+                        </template>
+                        <template is="dom-if" if="[[!info.values.ImgStart]]">
+                            <ColumnText class="animate__animated animate__fadeInLeft animate__delay-1s">
+                                <TextWrapper>
+                                    <TopLine>[[info.values.TopLine]]</TopLine>
+                                    <Heading light-text>[[info.values.Headline]]</Heading>
+                                    <Description>[[info.values.Description]]</Description>
+                                </TextWrapper>
+                            </ColumnText>
+                            <ColumnImg class="animate__animated animate__fadeInRight animate__delay-1s">
+                                <template is="dom-if" if="[[info.values.Image]]">
+                                    <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
+                                </template>
+                                <template is="dom-if" if="[[info.values.VideoUrl]]">
+                                    <iframe src="[[info.values.VideoUrl]]" width = "510" height = "287" frameborder="0"></iframe>
+                                </template>
+                            </ColumnImg>
+                        </template>
+                    </vi-grid>
+                </InfoContainer>
+            </template>
+        </template>
+    </template>
+</dom-module>
+
+<script src="page-section.js"></script>

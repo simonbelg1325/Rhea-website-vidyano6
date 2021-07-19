@@ -1,0 +1,1471 @@
+{
+  "Actions": {
+    "AddReference": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 300,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Add"
+      },
+      "IconName": "Add"
+    },
+    "BulkEdit": {
+      "Offset": 400,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Edit"
+      },
+      "IconName": "Edit"
+    },
+    "CancelEdit": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "CancelEdit"
+    },
+    "CancelSave": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "Cancel"
+    },
+    "Delete": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 500,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Delete"
+      },
+      "ConfirmationMessageKey": "AskForDeleteItems",
+      "IconName": "Delete"
+    },
+    "DialogCancel": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "Cancel"
+    },
+    "DialogOk": {
+      "IsSystem": true,
+      "SelectionRule": "> 0",
+      "DisplayName": {
+        "en": "OK"
+      },
+      "IconName": "Ok"
+    },
+    "Edit": {
+      "Offset": 100,
+      "ShowedOn": 5,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Edit"
+      },
+      "IconName": "Edit"
+    },
+    "EndEdit": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "ExportToCsv": {
+      "Offset": 30001,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Export"
+      },
+      "IconName": "Excel"
+    },
+    "ExportToExcel": {
+      "Offset": 30000,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Export"
+      },
+      "IconName": "Excel"
+    },
+    "New": {
+      "Offset": 200,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "New"
+      },
+      "IconName": "Add"
+    },
+    "Remove": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 600,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Remove"
+      },
+      "IconName": "Remove"
+    },
+    "Save": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "ShowHelp": {
+      "Offset": 60000,
+      "ShowedOn": 7,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Help"
+      },
+      "IsPinned": true,
+      "IconName": "Help"
+    },
+    "viSearch": {
+      "Offset": 1500,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Search"
+      },
+      "IsPinned": true,
+      "IconName": "Filter"
+    },
+    "viSaveAdvancedSearch": {
+      "Offset": 1600,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "viLoadAdvancedSearch": {
+      "Offset": 1600,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Load"
+      },
+      "IconName": "Add"
+    }
+  },
+  "DataTypes": {
+    "AsDetail": {
+      "$id": "DataType:AsDetail",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "BinaryFile": {
+      "$id": "DataType:BinaryFile",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Boolean": {
+      "$id": "DataType:Boolean",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Byte": {
+      "$id": "DataType:Byte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "ComboBox": {
+      "$id": "DataType:ComboBox",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "CommonMark": {
+      "$id": "DataType:CommonMark",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Date": {
+      "$id": "DataType:Date",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "DateTime": {
+      "$id": "DataType:DateTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "DateTimeOffset": {
+      "$id": "DataType:DateTimeOffset",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Decimal": {
+      "$id": "DataType:Decimal",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Double": {
+      "$id": "DataType:Double",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "DropDown": {
+      "$id": "DataType:DropDown",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Enum": {
+      "$id": "DataType:Enum",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "FlagsEnum": {
+      "$id": "DataType:FlagsEnum",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Geography": {
+      "$id": "DataType:Geography",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": true,
+      "CanListDistincts": false
+    },
+    "Guid": {
+      "$id": "DataType:Guid",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Image": {
+      "$id": "DataType:Image",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Int16": {
+      "$id": "DataType:Int16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Int32": {
+      "$id": "DataType:Int32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Int64": {
+      "$id": "DataType:Int64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "KeyValueList": {
+      "$id": "DataType:KeyValueList",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "MultiLineString": {
+      "$id": "DataType:MultiLineString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "MultiString": {
+      "$id": "DataType:MultiString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableBoolean": {
+      "$id": "DataType:NullableBoolean",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableByte": {
+      "$id": "DataType:NullableByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDate": {
+      "$id": "DataType:NullableDate",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDateTime": {
+      "$id": "DataType:NullableDateTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDateTimeOffset": {
+      "$id": "DataType:NullableDateTimeOffset",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDecimal": {
+      "$id": "DataType:NullableDecimal",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDouble": {
+      "$id": "DataType:NullableDouble",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableGuid": {
+      "$id": "DataType:NullableGuid",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "NullableInt16": {
+      "$id": "DataType:NullableInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableInt32": {
+      "$id": "DataType:NullableInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableInt64": {
+      "$id": "DataType:NullableInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableSByte": {
+      "$id": "DataType:NullableSByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableSingle": {
+      "$id": "DataType:NullableSingle",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableTime": {
+      "$id": "DataType:NullableTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUInt16": {
+      "$id": "DataType:NullableUInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUInt32": {
+      "$id": "DataType:NullableUInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUInt64": {
+      "$id": "DataType:NullableUInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUser": {
+      "$id": "DataType:NullableUser",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Password": {
+      "$id": "DataType:Password",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Reference": {
+      "$id": "DataType:Reference",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "SByte": {
+      "$id": "DataType:SByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Single": {
+      "$id": "DataType:Single",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": false,
+      "CanListDistincts": true
+    },
+    "String": {
+      "$id": "DataType:String",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Time": {
+      "$id": "DataType:Time",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "TranslatedString": {
+      "$id": "DataType:TranslatedString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "UInt16": {
+      "$id": "DataType:UInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "UInt32": {
+      "$id": "DataType:UInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "UInt64": {
+      "$id": "DataType:UInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "User": {
+      "$id": "DataType:User",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "YesNo": {
+      "$id": "DataType:YesNo",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    }
+  },
+  "Schemas": {
+    "Rhea": {
+      "PersistentObjects": {
+        "dc572bd0-20a2-39dc-8079-767273a4ff12": {
+          "$id": "PersistentObject:dc572bd0-20a2-39dc-8079-767273a4ff12",
+          "SchemaName": "Rhea",
+          "Type": "Contact",
+          "Salt": "v93TP_GW73jsHmPoIypWx9-8z4sDS3azvgLcxIICsFak9H7ETn0e6g",
+          "Breadcrumb": "{Address}",
+          "ContextProperty": "Contacts",
+          "Label": {
+            "en": "Contact"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:b0c50be7-f19b-4abc-9196-f58901a88cba",
+              "Id": "b0c50be7-f19b-4abc-9196-f58901a88cba"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:1acdabc7-0820-425c-8a0a-bdf25ce28d77",
+              "Id": "1acdabc7-0820-425c-8a0a-bdf25ce28d77"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:530754f5-9e18-34e1-baca-0edf91ef390f",
+              "Id": "530754f5-9e18-34e1-baca-0edf91ef390f",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Address",
+              "Label": {
+                "en": "Address"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:b0c50be7-f19b-4abc-9196-f58901a88cba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:1acdabc7-0820-425c-8a0a-bdf25ce28d77"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:6162855a-738c-398d-93f6-cd01ff399604",
+              "Id": "6162855a-738c-398d-93f6-cd01ff399604",
+              "Offset": 20,
+              "Rules": "IsEmail; NotEmpty",
+              "Name": "Email",
+              "Label": {
+                "en": "Email"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:b0c50be7-f19b-4abc-9196-f58901a88cba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:1acdabc7-0820-425c-8a0a-bdf25ce28d77"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:8d5cbac7-0287-3dcf-9c45-2241e824b7b1",
+              "Id": "8d5cbac7-0287-3dcf-9c45-2241e824b7b1",
+              "Offset": 30,
+              "Rules": "NotEmpty",
+              "Name": "MapImage",
+              "Label": {
+                "en": "Map image"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:b0c50be7-f19b-4abc-9196-f58901a88cba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:1acdabc7-0820-425c-8a0a-bdf25ce28d77"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:b7726fb0-ad16-3e2c-a01d-2e50580831ed",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "NavItem",
+              "LookupId": "ade1c9fc-678c-4f0e-8dbc-982834571fdf",
+              "Id": "b7726fb0-ad16-3e2c-a01d-2e50580831ed",
+              "Offset": 50,
+              "Name": "NavSection",
+              "Label": {
+                "en": "Nav section"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:b0c50be7-f19b-4abc-9196-f58901a88cba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:1acdabc7-0820-425c-8a0a-bdf25ce28d77"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:54cfdcfa-f48a-3774-9855-6d0f94c252da",
+              "Id": "54cfdcfa-f48a-3774-9855-6d0f94c252da",
+              "Offset": 40,
+              "Rules": "NotEmpty",
+              "Name": "Tel",
+              "Label": {
+                "en": "Tel"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:b0c50be7-f19b-4abc-9196-f58901a88cba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:1acdabc7-0820-425c-8a0a-bdf25ce28d77"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "d28a9fc4-0d7c-3c65-91d5-cb1d9174e5fd": {
+          "$id": "PersistentObject:d28a9fc4-0d7c-3c65-91d5-cb1d9174e5fd",
+          "SchemaName": "Rhea",
+          "Type": "NavSection",
+          "Salt": "zXncmBIkG4ToNUb_I8YgKzaJd6AicITgWRUQ-bhf4zcAG8HkGxE9mQ",
+          "Breadcrumb": "{NavItem}",
+          "ContextProperty": "NavSections",
+          "Label": {
+            "en": "Nav section"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:6d6d8fec-4a3d-47ab-b206-c6b7aed3e931",
+              "Id": "6d6d8fec-4a3d-47ab-b206-c6b7aed3e931"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:96be8535-c815-4b15-9f9a-dea717815d4d",
+              "Id": "96be8535-c815-4b15-9f9a-dea717815d4d"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:1f62e1f2-760f-3c13-b9c7-90af3492e39a",
+              "Id": "1f62e1f2-760f-3c13-b9c7-90af3492e39a",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "NavItem",
+              "Label": {
+                "en": "Nav item"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6d6d8fec-4a3d-47ab-b206-c6b7aed3e931"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:96be8535-c815-4b15-9f9a-dea717815d4d"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:476e9b94-cbac-3be1-827b-68443954ec5d",
+              "Id": "476e9b94-cbac-3be1-827b-68443954ec5d",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "SectionHeader",
+              "Label": {
+                "en": "Section header"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6d6d8fec-4a3d-47ab-b206-c6b7aed3e931"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:96be8535-c815-4b15-9f9a-dea717815d4d"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:fd7deeac-9ba7-310e-98d3-95444aa8ca06",
+              "Id": "fd7deeac-9ba7-310e-98d3-95444aa8ca06",
+              "Offset": 30,
+              "Rules": "NotEmpty",
+              "Name": "SectionTitle",
+              "Label": {
+                "en": "Section title"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6d6d8fec-4a3d-47ab-b206-c6b7aed3e931"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:96be8535-c815-4b15-9f9a-dea717815d4d"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:0b6f1d92-74fd-332e-b7c8-26b4496e147a",
+              "Id": "0b6f1d92-74fd-332e-b7c8-26b4496e147a",
+              "Offset": 40,
+              "Rules": "NotEmpty; IsUrl",
+              "Name": "SectionVideoUrl",
+              "Label": {
+                "en": "Section video url"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6d6d8fec-4a3d-47ab-b206-c6b7aed3e931"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:96be8535-c815-4b15-9f9a-dea717815d4d"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "14fbdb7e-ddad-3ef5-94e0-dc3ae9c6d682": {
+          "$id": "PersistentObject:14fbdb7e-ddad-3ef5-94e0-dc3ae9c6d682",
+          "SchemaName": "Rhea",
+          "Type": "OurService",
+          "Salt": "z-H0TcMiLkD7ljP1AwNxY07JsRYcmaxZLOL3YoaVjvTuivHCpDSiNw",
+          "Breadcrumb": "{Header}",
+          "ContextProperty": "OurServices",
+          "Label": {
+            "en": "Our service"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:49d9bb48-3bf0-40c0-802e-be5949824a24",
+              "Id": "49d9bb48-3bf0-40c0-802e-be5949824a24"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:42730737-3961-4be6-87f2-003ef3c3b0c8",
+              "Id": "42730737-3961-4be6-87f2-003ef3c3b0c8"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:039e759a-8aee-3ba4-90ce-174ffc958fd9",
+              "Id": "039e759a-8aee-3ba4-90ce-174ffc958fd9",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Header",
+              "Label": {
+                "en": "Header"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:49d9bb48-3bf0-40c0-802e-be5949824a24"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:42730737-3961-4be6-87f2-003ef3c3b0c8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:eafd76ed-f6e5-3d87-9bd3-f508e5a209ba",
+              "Id": "eafd76ed-f6e5-3d87-9bd3-f508e5a209ba",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "Image",
+              "Label": {
+                "en": "Image"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:49d9bb48-3bf0-40c0-802e-be5949824a24"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:42730737-3961-4be6-87f2-003ef3c3b0c8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:4e94e9ae-05a9-334b-b9d2-2b98123d54eb",
+              "Id": "4e94e9ae-05a9-334b-b9d2-2b98123d54eb",
+              "Offset": 30,
+              "Rules": "NotEmpty",
+              "Name": "Message",
+              "Label": {
+                "en": "Message"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:49d9bb48-3bf0-40c0-802e-be5949824a24"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:42730737-3961-4be6-87f2-003ef3c3b0c8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:f1f58be9-85ad-3bfc-9177-b2b9d2ffc1ce",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "NavItem",
+              "LookupId": "ade1c9fc-678c-4f0e-8dbc-982834571fdf",
+              "Id": "f1f58be9-85ad-3bfc-9177-b2b9d2ffc1ce",
+              "Offset": 60,
+              "Name": "NavSection",
+              "Label": {
+                "en": "Nav section"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:49d9bb48-3bf0-40c0-802e-be5949824a24"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:42730737-3961-4be6-87f2-003ef3c3b0c8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:be32bd61-0183-3fbd-82a1-15cd45e70383",
+              "Id": "be32bd61-0183-3fbd-82a1-15cd45e70383",
+              "Offset": 40,
+              "Rules": "Required",
+              "Name": "Order",
+              "Label": {
+                "en": "Order"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:49d9bb48-3bf0-40c0-802e-be5949824a24"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:42730737-3961-4be6-87f2-003ef3c3b0c8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:d02caec7-1ee8-3a58-9f81-afc2ad12bc8d",
+              "Id": "d02caec7-1ee8-3a58-9f81-afc2ad12bc8d",
+              "Offset": 50,
+              "Rules": "NotEmpty",
+              "Name": "Title",
+              "Label": {
+                "en": "Title"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:49d9bb48-3bf0-40c0-802e-be5949824a24"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:42730737-3961-4be6-87f2-003ef3c3b0c8"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "4161e5af-3eb9-3e36-9a87-eb6eb4702ef6": {
+          "$id": "PersistentObject:4161e5af-3eb9-3e36-9a87-eb6eb4702ef6",
+          "SchemaName": "Rhea",
+          "Type": "PageInfo",
+          "Salt": "oaJyJwNRXLxVu1w6m5B1xmKlDWrOaEfki_EuF6i5pxJsNbINjV-6xw",
+          "Breadcrumb": "Page info",
+          "Label": {
+            "en": "PageInfo"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:99aa004a-6bd4-4abc-b575-87c13f817ae3",
+              "Id": "99aa004a-6bd4-4abc-b575-87c13f817ae3"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:427cb380-d172-408f-b209-fc88297890db",
+              "Id": "427cb380-d172-408f-b209-fc88297890db"
+            }
+          ],
+          "Attributes": [],
+          "Queries": [
+            "89c17e3f-582e-4eb2-8ce9-76771e6c84fa"
+          ]
+        },
+        "32cf0ea1-24ca-3714-baec-71d3d18d1022": {
+          "$id": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022",
+          "SchemaName": "Rhea",
+          "Type": "Reference",
+          "Salt": "pkILHmzehlsJJ7ldIrnAEQUbXSMRobMD1lmFMW04m5iFjTddUZa7Sw",
+          "Breadcrumb": "{Image}",
+          "ContextProperty": "References",
+          "Label": {
+            "en": "Reference"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:0f1e116b-cafb-4972-addb-a99283f84b54",
+              "Id": "0f1e116b-cafb-4972-addb-a99283f84b54"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:274b003a-b47d-4eb1-97a0-d2eca63b5bca",
+              "Id": "274b003a-b47d-4eb1-97a0-d2eca63b5bca"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:bd34c1f1-95ca-3e83-b732-680c0c27db3d",
+              "Id": "bd34c1f1-95ca-3e83-b732-680c0c27db3d",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Image",
+              "Label": {
+                "en": "Image"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:0f1e116b-cafb-4972-addb-a99283f84b54"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:274b003a-b47d-4eb1-97a0-d2eca63b5bca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:99b36a2b-a908-3e51-848a-7288737f0f58",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "NavItem",
+              "LookupId": "ade1c9fc-678c-4f0e-8dbc-982834571fdf",
+              "Id": "99b36a2b-a908-3e51-848a-7288737f0f58",
+              "Offset": 40,
+              "Name": "NavSection",
+              "Label": {
+                "en": "Nav section"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:0f1e116b-cafb-4972-addb-a99283f84b54"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:274b003a-b47d-4eb1-97a0-d2eca63b5bca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:7cbc8ac5-b759-38ff-8fd0-1246ccd9c6f7",
+              "Id": "7cbc8ac5-b759-38ff-8fd0-1246ccd9c6f7",
+              "Offset": 40,
+              "Name": "NavSectionId",
+              "Label": {
+                "en": "Nav section id"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:NullableInt32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:0f1e116b-cafb-4972-addb-a99283f84b54"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:274b003a-b47d-4eb1-97a0-d2eca63b5bca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:1d527be2-9c05-3e7c-8046-5fa3cf721f60",
+              "Id": "1d527be2-9c05-3e7c-8046-5fa3cf721f60",
+              "Offset": 20,
+              "Rules": "Required",
+              "Name": "Order",
+              "Label": {
+                "en": "Order"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:0f1e116b-cafb-4972-addb-a99283f84b54"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:274b003a-b47d-4eb1-97a0-d2eca63b5bca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:f8f2128c-f057-3ea9-b80d-525b95a03abb",
+              "Id": "f8f2128c-f057-3ea9-b80d-525b95a03abb",
+              "Offset": 30,
+              "Rules": "NotEmpty",
+              "Name": "Title",
+              "Label": {
+                "en": "Title"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:0f1e116b-cafb-4972-addb-a99283f84b54"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:274b003a-b47d-4eb1-97a0-d2eca63b5bca"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "2f304469-ca79-3773-99b8-e6ba5d269308": {
+          "$id": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308",
+          "SchemaName": "Rhea",
+          "Type": "Section",
+          "Salt": "r99bZEGUiTVTdM_Ge4dXg3Wep7rq-mPsQyLs7i0QBWZT8xq1lEGx3Q",
+          "Breadcrumb": "{NavSection}",
+          "ContextProperty": "Sections",
+          "Label": {
+            "en": "Section"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9",
+              "Id": "2b9b1e32-4949-469c-80a7-96e5594236c9"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8",
+              "Id": "ebef2e4d-965d-4dcd-b149-71108bc665a8"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:45f2e19f-bcc1-3bf7-a466-2d1b512f5aa3",
+              "Id": "45f2e19f-bcc1-3bf7-a466-2d1b512f5aa3",
+              "Offset": 10,
+              "Rules": "Required",
+              "Name": "Alt",
+              "Label": {
+                "en": "Alt"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:9029679d-1256-337f-952d-bc8f8af1f9f3",
+              "Id": "9029679d-1256-337f-952d-bc8f8af1f9f3",
+              "Offset": 20,
+              "Name": "Description",
+              "DataTypeHints": "QueryMaxContentLength=0",
+              "Label": {
+                "en": "Description"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:MultiLineString"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:a22e1919-083d-33fd-b344-06b270e4b3ed",
+              "Id": "a22e1919-083d-33fd-b344-06b270e4b3ed",
+              "Offset": 30,
+              "Name": "Headline",
+              "Label": {
+                "en": "Headline"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:50792124-ddd6-3d5d-a6df-c467c8ab7f30",
+              "Id": "50792124-ddd6-3d5d-a6df-c467c8ab7f30",
+              "Offset": 40,
+              "Name": "Image",
+              "DataTypeHints": "QueryMaxContentLength=0",
+              "Label": {
+                "en": "Image"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:MultiLineString"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:5569ec3d-0bde-3983-8de5-86cf478ca3cb",
+              "Id": "5569ec3d-0bde-3983-8de5-86cf478ca3cb",
+              "Offset": 50,
+              "Rules": "Required",
+              "Name": "ImgStart",
+              "Label": {
+                "en": "Img start"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Boolean"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:0c4a8ab0-f48d-337c-9991-17cdffe0a722",
+              "Id": "0c4a8ab0-f48d-337c-9991-17cdffe0a722",
+              "Offset": 60,
+              "Rules": "Required",
+              "Name": "LightBg",
+              "Label": {
+                "en": "Light bg"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Boolean"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:dc22eec9-3c25-3346-b866-91fae595404e",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "NavItem",
+              "LookupId": "ade1c9fc-678c-4f0e-8dbc-982834571fdf",
+              "Id": "dc22eec9-3c25-3346-b866-91fae595404e",
+              "Offset": 70,
+              "Rules": "Required",
+              "Name": "NavSection",
+              "Label": {
+                "en": "Nav section"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:3e23ce77-40ef-3323-a6de-d2fa87919432",
+              "Id": "3e23ce77-40ef-3323-a6de-d2fa87919432",
+              "Offset": 80,
+              "Rules": "Required",
+              "Name": "Order",
+              "Label": {
+                "en": "Order"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:6df16708-0cd9-314f-b5e4-af94ebfdd78e",
+              "Id": "6df16708-0cd9-314f-b5e4-af94ebfdd78e",
+              "Offset": 90,
+              "Name": "TopLine",
+              "Label": {
+                "en": "Top line"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:6a323fb4-7331-3962-8441-0a698bc58350",
+              "Id": "6a323fb4-7331-3962-8441-0a698bc58350",
+              "Offset": 100,
+              "Rules": "IsUrl",
+              "Name": "VideoUrl",
+              "DataTypeHints": "QueryMaxContentLength=0",
+              "Label": {
+                "en": "Video url"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:MultiLineString"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2b9b1e32-4949-469c-80a7-96e5594236c9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:ebef2e4d-965d-4dcd-b149-71108bc665a8"
+              }
+            }
+          ],
+          "Queries": []
+        }
+      },
+      "Queries": {
+        "2aafa750-9f9f-44d1-b70b-e81a0724801f": {
+          "$id": "Query:2aafa750-9f9f-44d1-b70b-e81a0724801f",
+          "Source": "Database.Sections",
+          "AutoQuery": true,
+          "Name": "Sections",
+          "Label": {
+            "en": "Sections"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
+          },
+          "Columns": []
+        },
+        "89c17e3f-582e-4eb2-8ce9-76771e6c84fa": {
+          "$id": "Query:89c17e3f-582e-4eb2-8ce9-76771e6c84fa",
+          "Source": "Custom.GetHomePageInfo",
+          "AutoQuery": true,
+          "Name": "GetHomePageInfo",
+          "Label": {
+            "en": "GetHomePageInfo"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
+          },
+          "Columns": []
+        },
+        "a3225db7-4d07-4b1d-9d19-460f74484aff": {
+          "$id": "Query:a3225db7-4d07-4b1d-9d19-460f74484aff",
+          "Source": "Database.References",
+          "AutoQuery": true,
+          "Name": "References",
+          "Label": {
+            "en": "References"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022"
+          },
+          "Columns": []
+        },
+        "ade1c9fc-678c-4f0e-8dbc-982834571fdf": {
+          "$id": "Query:ade1c9fc-678c-4f0e-8dbc-982834571fdf",
+          "Source": "Database.NavSections",
+          "AutoQuery": true,
+          "Name": "NavSections",
+          "Label": {
+            "en": "Nav sections"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:d28a9fc4-0d7c-3c65-91d5-cb1d9174e5fd"
+          },
+          "Columns": []
+        },
+        "b302daa9-ee22-4d88-9006-e23c63d15e39": {
+          "$id": "Query:b302daa9-ee22-4d88-9006-e23c63d15e39",
+          "Source": "Database.OurServices",
+          "AutoQuery": true,
+          "Name": "OurServices",
+          "Label": {
+            "en": "Our services"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:14fbdb7e-ddad-3ef5-94e0-dc3ae9c6d682"
+          },
+          "Columns": []
+        },
+        "de8adcc7-6730-412a-b0c8-ed2b4e2cc090": {
+          "$id": "Query:de8adcc7-6730-412a-b0c8-ed2b4e2cc090",
+          "Source": "Database.Contacts",
+          "AutoQuery": true,
+          "Name": "Contacts",
+          "Label": {
+            "en": "Contacts"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:dc572bd0-20a2-39dc-8079-767273a4ff12"
+          },
+          "Columns": []
+        }
+      }
+    }
+  },
+  "ProgramUnits": [
+    {
+      "Name": "Home",
+      "Title": {
+        "en": "Home"
+      },
+      "Groups": [],
+      "Items": [
+        {
+          "Offset": 10,
+          "Title": {
+            "en": "Nav sections"
+          },
+          "Name": "NavSections",
+          "Query": {
+            "$ref": "Query:ade1c9fc-678c-4f0e-8dbc-982834571fdf"
+          }
+        },
+        {
+          "Offset": 30,
+          "Title": {
+            "en": "Contacts"
+          },
+          "Name": "Contacts",
+          "Query": {
+            "$ref": "Query:de8adcc7-6730-412a-b0c8-ed2b4e2cc090"
+          }
+        },
+        {
+          "Offset": 70,
+          "Title": {
+            "en": "Sections"
+          },
+          "Name": "Sections",
+          "Query": {
+            "$ref": "Query:2aafa750-9f9f-44d1-b70b-e81a0724801f"
+          }
+        },
+        {
+          "Offset": 80,
+          "Title": {
+            "en": "Page info"
+          },
+          "Name": "PageInfo",
+          "PersistentObject": {
+            "$ref": "PersistentObject:4161e5af-3eb9-3e36-9a87-eb6eb4702ef6"
+          }
+        }
+      ]
+    }
+  ],
+  "Reports": [],
+  "ServiceVersion": "6.0.20210322.2897-rc1+a5e9958",
+  "ModelHash": "6I2LXVA2BauF7JzX+VEFF8LNYTuBnSh1reME+qR0/3Y=",
+  "SeederHash": "yob+BuFRqrhY/0LUMpgC4NEWgJ3rsvJWMuAw+eLqK8w="
+}

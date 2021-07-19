@@ -1,0 +1,38 @@
+﻿:host {
+  display: flex;
+  flex-direction: column;
+  --rhea-wrapper-width: 1200px; }
+  :host header {
+    line-height: 60px;
+    height: 60px;
+    background-color: #fff;
+    padding: 0 12px; }
+    :host header nav {
+      justify-content: space-between;
+      line-height: 60px;
+      z-index: 1;
+      padding: 0 24px;
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 100%; }
+      :host header nav img {
+        height: 60px;
+        margin-right: auto; }
+      :host header nav button {
+        display: flex;
+        padding: 0;
+        margin: 0 1vw; }
+        :host header nav button:hover {
+          border-bottom: 3px solid   #00a8e9; }
+        :host header nav button span {
+          display: block;
+          align-self: flex-end;
+          line-height: 50px;
+          box-sizing: border-box;
+          padding: 0 12px;
+          letter-spacing: 0.2px;
+          font-weight: 600;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent; }
+        :host header nav button[active] span {
+          border-bottom: 3px solid   #00a8e9; }

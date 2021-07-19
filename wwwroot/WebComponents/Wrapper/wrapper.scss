@@ -1,0 +1,53 @@
+﻿:host {
+    display: flex;
+    flex-direction: column;
+    --rhea-wrapper-width: 1200px;
+
+    header {
+        line-height: 60px;
+        height: 60px;
+        background-color: #fff;
+        padding: 0 12px;
+
+        nav {
+            justify-content: space-between;
+            line-height: 60px;
+            z-index: 1;
+            padding: 0 24px;
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+
+            img {
+                height: 60px;
+                margin-right: auto;
+            }
+
+            button {
+                display: flex;
+                padding: 0;
+                margin: 0 1vw;
+
+                &:hover {
+                     border-bottom: 3px solid   #00a8e9;
+                }
+
+                span {
+                    display: block;
+                    align-self: flex-end;
+                    line-height: 50px;
+                    box-sizing: border-box;
+                    padding: 0 12px;
+                    letter-spacing: 0.2px;
+                    font-weight: 600;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                }
+
+                &[active] span {
+                    border-bottom: 3px solid   #00a8e9;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+﻿{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "removeComments": true,
+    "emitBOM": false,
+    "noEmitOnError": false,
+    "noEmitHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "alwaysStrict": true
+  },
+  "compileOnSave": true,
+  "files": [
+    "Scripts/typings/vidyano/vidyano.d.ts",
+    "wwwroot/WebComponents/ContactUs/contact-us.ts",
+    "wwwroot/WebComponents/Home/home.ts",
+    "wwwroot/WebComponents/Enhanced/enhanced.ts",
+    "wwwroot/WebComponents/Maintenance/maintenance.ts",
+    "wwwroot/WebComponents/References/references.ts",
+    "wwwroot/WebComponents/PageSection/page-section.ts",
+    "wwwroot/WebComponents/Legacy/legacy.ts",
+    "wwwroot/WebComponents/MenuSection/menu-section.ts",
+    "wwwroot/WebComponents/Wrapper/wrapper.ts"
+
+  ]
+}

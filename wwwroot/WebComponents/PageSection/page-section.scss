@@ -1,0 +1,78 @@
+﻿:host {
+    InfoContainer[light-bg]{
+        background: #f9f9f9;
+    }
+
+    InfoContainer {
+        background: #96adc2;
+        display: grid;
+        justify-content: center;
+
+        vi-grid {
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            ColumnText,
+            ColumnImg {
+                margin-bottom: 15px;
+                padding: 0 15px;
+                max-width: 540px;
+                width: 100%;
+
+                .video-player{
+                    width: 555px;
+                    height: 312px;
+                }
+
+                TextWrapper {
+                    padding-bottom: 60px; 
+
+                    TopLine {
+                        display: flex;
+                        color: #0c4c86;
+                        font-size: 16px;
+                        line-height: 16px;
+                        font-weight: 700;
+                        letter-spacing: 1.4px;
+                        text-transform: uppercase;
+                        margin-bottom: 16px;
+                    }
+
+                    Heading {
+                        display: flex;
+                        margin-bottom: 24px;
+                        font-size: 20px;
+                        line-height: 1.1;
+                        font-weight: 600;
+                        /*color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};*/
+                    }
+
+                    Heading[light-text] {
+                        color: #f7f8fa;
+                    }
+
+                    Description {
+                        /*max-width: 440px;*/
+                        font-size: 13px;
+                        line-height: 24px;
+                        color: #fff;
+                    }
+
+                    Description[dark-text]{
+                        color: #010606;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}
+

@@ -1,0 +1,46 @@
+﻿[
+  {
+    "outputFile": "wwwroot/WebComponents/ContactUs/contact-us.css",
+    "inputFile": "wwwroot/WebComponents/ContactUs/contact-us.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/MenuSection/menu-section.css",
+    "inputFile": "wwwroot/WebComponents/MenuSection/menu-section.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/Wrapper/wrapper.css",
+    "inputFile": "wwwroot/WebComponents/Wrapper/wrapper.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/Home/home.css",
+    "inputFile": "wwwroot/WebComponents/Home/home.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/Enhanced/enhanced.css",
+    "inputFile": "wwwroot/WebComponents/Enhanced/enhanced.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/Legacy/legacy.css",
+    "inputFile": "wwwroot/WebComponents/Legacy/legacy.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/Maintenance/maintenance.css",
+    "inputFile": "wwwroot/WebComponents/Maintenance/maintenance.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/References/references.css",
+    "inputFile": "wwwroot/WebComponents/References/references.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/InfoSection/info-section.css",
+    "inputFile": "wwwroot/WebComponents/InfoSection/info-section.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/Section/section.css",
+    "inputFile": "wwwroot/WebComponents/Section/section.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/PageSection/page-section.css",
+    "inputFile": "wwwroot/WebComponents/PageSection/page-section.scss"
+  }
+]

@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\WebComponents\Home\home.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Data\cdncache.tmp" />
+    <Content Include="App_Data\Websites\Admin\index.html" />
+    <Content Include="App_Data\Websites\Default\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Vidyano.PostgreSQL" Version="6.0.20210408.2937-rc1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\WebComponents\Helpdesk\" />
+    <Folder Include="wwwroot\WebComponents\Home\Images\" />
+    <Folder Include="wwwroot\WebComponents\MenuSection\Video\" />
+    <Folder Include="wwwroot\WebComponents\Wrapper\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+
+</Project>
