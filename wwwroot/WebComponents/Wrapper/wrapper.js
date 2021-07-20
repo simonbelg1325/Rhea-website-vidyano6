@@ -8,34 +8,67 @@ var Rhea;
             function Wrapper() {
                 return _super !== null && _super.apply(this, arguments) || this;
             }
+            Wrapper.prototype.attached = function () {
+                return __awaiter(this, void 0, void 0, function () {
+                    var query;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
+                            case 0:
+                                _super.prototype.attached.call(this);
+                                return [4, this.app.initialize];
+                            case 1:
+                                _a.sent();
+                                return [4, this.service.getQuery("GetMenuBar")];
+                            case 2:
+                                query = _a.sent();
+                                this._setMenu(query);
+                                return [2];
+                        }
+                    });
+                });
+            };
             Wrapper.prototype._isRoute = function (currentRoute, where) {
                 if (currentRoute.route === "" && where === "home")
                     return true;
                 else if (currentRoute.route === where)
                     return true;
             };
-            Wrapper.prototype._home = function () {
-                this.app.changePath("");
-            };
-            Wrapper.prototype._maintenance = function () {
-                this.app.changePath("maintenance");
-            };
-            Wrapper.prototype._legacy = function () {
-                this.app.changePath("legacy");
-            };
-            Wrapper.prototype._enhanced = function () {
-                this.app.changePath("enhanced");
-            };
-            Wrapper.prototype._references = function () {
-                this.app.changePath("references");
-            };
-            Wrapper.prototype._contactUs = function () {
-                this.app.changePath("contact-us");
+            Wrapper.prototype._changePath = function (e) {
+                var menu = e.model.menu.values;
+                switch (menu.NavItem) {
+                    case "HOME":
+                        this.app.changePath("");
+                        break;
+                    case "MAINTENANCE":
+                        this.app.changePath("maintenance");
+                        break;
+                    case "LEGACY":
+                        this.app.changePath("legacy");
+                        break;
+                    case "ENHANCED":
+                        this.app.changePath("enhanced");
+                        break;
+                    case "REFERENCES":
+                        this.app.changePath("references");
+                        break;
+                    case "CONTACT US":
+                        this.app.changePath("contact-us");
+                        break;
+                    case "HELPDESK":
+                        window.location.href = "https://helpdesk.rhea.be";
+                        break;
+                    default:
+                        this.app.changePath("");
+                }
             };
             Wrapper = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
                     properties: {
-                        currentRoute: Object
+                        currentRoute: Object,
+                        menu: {
+                            type: Object,
+                            readOnly: true
+                        }
                     }
                 }, "rhea")
             ], Wrapper);

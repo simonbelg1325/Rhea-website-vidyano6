@@ -1,19 +1,15 @@
 ﻿<dom-module id="rhea-wrapper">
     <template>
         <link rel="stylesheet" href="wrapper.css"/>
-       
-            <header class="layout horizontal justified relative">
+        
+          <header class="layout horizontal justified relative">
                 <nav class="fit layout center-justified horizontal">
                     <img class="self-center"src="Images/rhea-logo-1.png" alt="rhea-logo"/>
-                    <button is="vi-button" active$="[[_isRoute(currentRoute, 'home')]]" on-tap="_home" inverse><span>HOME</span></button>
-                    <button is="vi-button" active$="[[_isRoute(currentRoute, 'maintenance')]]" on-tap="_maintenance" inverse><span>MAINTENANCE</span></button>
-                    <button is="vi-button" active$="[[_isRoute(currentRoute, 'legacy')]]" on-tap="_legacy" inverse><span>LEGACY</span></button>
-                    <button is="vi-button" active$="[[_isRoute(currentRoute, 'enhanced')]]" on-tap="_enhanced" inverse><span>ENHANCED</span></button>
-                    <button is="vi-button" active$="[[_isRoute(currentRoute, 'references')]]" on-tap="_references" inverse><span>REFERENCES</span></button>
-                    <button is="vi-button" active$="[[_isRoute(currentRoute, 'contact-us')]]" on-tap="_contactUs" inverse><span>CONTACT US</span></button>
-                    <button is="vi-button" active$="[[_isRoute(currentRoute, 'helpdesk')]]" on-tap="_helpdesk" inverse><span>HELPDESK</span></button>
+                    <template is="dom-repeat" items="[[menu.items]]" as="menu">
+                        <button is="vi-button" active$="[[_isRoute(currentRoute, menu.values.NavItem)]]" on-tap="_changePath" inverse><span>[[menu.values.NavItem]]</span></button>
+                    </template>
                 </nav>
-            </header>
+        </header>
          
         <vi-app-route-presenter class="flex relative" current-route="{{currentRoute}}">
                 <vi-app-route route="" component="Rhea.WebComponents.Home" preserve-content class="fit"></vi-app-route>
@@ -21,7 +17,7 @@
                 <vi-app-route route="legacy" component="Rhea.WebComponents.Legacy" preserve-content class="fit"></vi-app-route>
                 <vi-app-route route="enhanced" component="Rhea.WebComponents.Enhanced" preserve-content class="fit"></vi-app-route>
                 <vi-app-route route="references" component="Rhea.WebComponents.References" preserve-content class="fit"></vi-app-route>
-                <vi-app-route route="contact-us" component="Rhea.WebComponents.ContactUs" preserve-content class="fit"></vi-app-route>
+            <vi-app-route route="contact-us" component="Rhea.WebComponents.ContactUs" preserve-content class="fit"></vi-app-route>
         </vi-app-route-presenter>
         
     </template>

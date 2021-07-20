@@ -7,6 +7,9 @@ namespace Rhea.Service.Actions
     {
         [Key]
         public int Id { get; set; }
+        public string SectionVideoUrl { get; set; }
+        public string SectionHeader { get; set; }
+        public string SectionTitle { get; set; }
         public bool LightBg { get; set; }
         public string? TopLine { get; set; }
         public string? Headline { get; set; }

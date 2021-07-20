@@ -16,6 +16,10 @@ var Rhea;
                     });
                 });
             };
+            PageSection.prototype._check = function (val, nav) {
+                if (val === nav)
+                    return;
+            };
             PageSection = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
                     properties: {}

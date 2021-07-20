@@ -7,5 +7,9 @@
         async attached() {
             super.attached();
         }
+
+        private _check(val: string, nav: string) {
+            if (val === nav) return;
+        }
     }
 }

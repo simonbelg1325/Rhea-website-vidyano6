@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Rhea.Migrations
 {
-    public partial class InitialSetup : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,10 +13,7 @@ namespace Rhea.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    NavItem = table.Column<string>(type: "text", nullable: false),
-                    SectionVideoUrl = table.Column<string>(type: "text", nullable: false),
-                    SectionHeader = table.Column<string>(type: "text", nullable: false),
-                    SectionTitle = table.Column<string>(type: "text", nullable: false)
+                    NavItem = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -98,6 +95,9 @@ namespace Rhea.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    SectionVideoUrl = table.Column<string>(type: "text", nullable: false),
+                    SectionHeader = table.Column<string>(type: "text", nullable: false),
+                    SectionTitle = table.Column<string>(type: "text", nullable: false),
                     LightBg = table.Column<bool>(type: "boolean", nullable: false),
                     TopLine = table.Column<string>(type: "text", nullable: true),
                     Headline = table.Column<string>(type: "text", nullable: true),

@@ -31,13 +31,13 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
-  :host MenuContainer MenuH1 {
-    color: #fff;
-    font-size: 48px;
-    text-align: center; }
-  :host MenuContainer MenuP {
-    margin-top: 24px;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    max-width: 600px; }
+    :host MenuContainer MenuContent MenuH1 {
+      color: #fff;
+      font-size: 48px;
+      text-align: center; }
+    :host MenuContainer MenuContent MenuP {
+      margin-top: 24px;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      max-width: 600px; }

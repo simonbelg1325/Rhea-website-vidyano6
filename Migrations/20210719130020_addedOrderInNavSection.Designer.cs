@@ -10,8 +10,8 @@ using Rhea.Service;
 namespace Rhea.Migrations
 {
     [DbContext(typeof(RheaContext))]
-    [Migration("20210715080709_InitialSetup")]
-    partial class InitialSetup
+    [Migration("20210719130020_addedOrderInNavSection")]
+    partial class addedOrderInNavSection
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -65,17 +65,8 @@ namespace Rhea.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("SectionHeader")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("SectionTitle")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("SectionVideoUrl")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("Order")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -176,6 +167,18 @@ namespace Rhea.Migrations
 
                     b.Property<int>("Order")
                         .HasColumnType("integer");
+
+                    b.Property<string>("SectionHeader")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SectionTitle")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SectionVideoUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("TopLine")
                         .HasColumnType("text");

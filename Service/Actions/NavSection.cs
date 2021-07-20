@@ -9,9 +9,8 @@ namespace Rhea.Service.Actions
         [Key] public int Id { get; set; }
 
         public string NavItem { get; set; }
-        public string SectionVideoUrl { get; set; }
-        public string SectionHeader { get; set; }
-        public string SectionTitle { get; set; }
+        public int Order { get; set; }
+
 
 
         public class NavSectionActions : PersistentObjectActionsReference<RheaContext, NavSection>
@@ -23,6 +22,11 @@ namespace Rhea.Service.Actions
             public override void OnNew(PersistentObject obj, PersistentObject? parent, Query? query, Dictionary<string, string>? parameters)
             {
                 base.OnNew(obj, parent, query, parameters);
+            }
+
+            public override void OnSave(PersistentObject obj)
+            {
+                base.OnSave(obj);
             }
         }
     }
