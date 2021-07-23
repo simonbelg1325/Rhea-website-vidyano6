@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Rhea.Service;
@@ -9,9 +10,10 @@ using Rhea.Service;
 namespace Rhea.Migrations
 {
     [DbContext(typeof(RheaContext))]
-    partial class RheaContextModelSnapshot : ModelSnapshot
+    [Migration("20210722082340_ChangesToNavAndSection")]
+    partial class ChangesToNavAndSection
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,12 +66,15 @@ namespace Rhea.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("NavSectionHeader")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("NavSectionTitle")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("NavSectionVideo")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("Order")

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Rhea.Service;
@@ -9,9 +10,10 @@ using Rhea.Service;
 namespace Rhea.Migrations
 {
     [DbContext(typeof(RheaContext))]
-    partial class RheaContextModelSnapshot : ModelSnapshot
+    [Migration("20210720122506_NavSectionChanges")]
+    partial class NavSectionChanges
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,12 +66,11 @@ namespace Rhea.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("NavSectionHeader")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("NavSectionTitle")
-                        .HasColumnType("text");
-
-                    b.Property<string>("NavSectionVideo")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("Order")
@@ -174,6 +175,18 @@ namespace Rhea.Migrations
 
                     b.Property<int>("Order")
                         .HasColumnType("integer");
+
+                    b.Property<string>("SectionHeader")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SectionTitle")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SectionVideoUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("TopLine")
                         .HasColumnType("text");

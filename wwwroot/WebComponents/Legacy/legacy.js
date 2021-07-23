@@ -8,9 +8,22 @@ var Rhea;
             function Legacy() {
                 return _super !== null && _super.apply(this, arguments) || this;
             }
+            Legacy.prototype.attached = function () {
+                return __awaiter(this, void 0, void 0, function () {
+                    return __generator(this, function (_a) {
+                        _super.prototype.attached.call(this);
+                        return [2];
+                    });
+                });
+            };
             Legacy = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
-                    properties: {}
+                    properties: {
+                        legacy: {
+                            type: Boolean,
+                            value: true
+                        }
+                    }
                 }, "rhea")
             ], Legacy);
             return Legacy;

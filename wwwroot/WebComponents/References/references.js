@@ -10,7 +10,12 @@ var Rhea;
             }
             References = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
-                    properties: {}
+                    properties: {
+                        references: {
+                            type: Boolean,
+                            value: true
+                        }
+                    }
                 }, "rhea")
             ], References);
             return References;

@@ -31,7 +31,6 @@ var Rhea;
                                 return [4, this._setInfo(query)];
                             case 5:
                                 _b.sent();
-                                console.log(this.section);
                                 return [2];
                         }
                     });
@@ -40,24 +39,9 @@ var Rhea;
             Home.prototype._sizeChanged = function () {
                 Polymer.dom(this.root).querySelector("#list").fire("iron-resize");
             };
-            Home.prototype._setPageInfo = function (information) {
-            };
             Home = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
                     properties: {
-                        header: {
-                            type: String
-                        },
-                        titleSection: {
-                            type: String
-                        },
-                        topLine: {
-                            type: String,
-                            readOnly: true
-                        },
-                        headline: {
-                            type: String
-                        },
                         section: {
                             type: Object,
                             readOnly: true,
@@ -67,8 +51,12 @@ var Rhea;
                             type: Object,
                             readOnly: true,
                             notify: true
+                        },
+                        home: {
+                            type: Boolean,
+                            value: true
                         }
-                    },
+                    }
                 }, "rhea")
             ], Home);
             return Home;

@@ -13,7 +13,12 @@ var Rhea;
             };
             ContactUs = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
-                    properties: {}
+                    properties: {
+                        contact: {
+                            type: Boolean,
+                            value: true
+                        }
+                    }
                 }, "rhea")
             ], ContactUs);
             return ContactUs;

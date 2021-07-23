@@ -8,9 +8,22 @@ var Rhea;
             function Maintenance() {
                 return _super !== null && _super.apply(this, arguments) || this;
             }
+            Maintenance.prototype.attached = function () {
+                return __awaiter(this, void 0, void 0, function () {
+                    return __generator(this, function (_a) {
+                        _super.prototype.attached.call(this);
+                        return [2];
+                    });
+                });
+            };
             Maintenance = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
-                    properties: {}
+                    properties: {
+                        maintenance: {
+                            type: Boolean,
+                            value: true
+                        }
+                    }
                 }, "rhea")
             ], Maintenance);
             return Maintenance;

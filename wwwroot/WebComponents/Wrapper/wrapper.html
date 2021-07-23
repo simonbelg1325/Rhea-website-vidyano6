@@ -2,13 +2,13 @@
     <template>
         <link rel="stylesheet" href="wrapper.css"/>
         
-          <header class="layout horizontal justified relative">
-                <nav class="fit layout center-justified horizontal">
-                    <img class="self-center"src="Images/rhea-logo-1.png" alt="rhea-logo"/>
-                    <template is="dom-repeat" items="[[menu.items]]" as="menu">
-                        <button is="vi-button" active$="[[_isRoute(currentRoute, menu.values.NavItem)]]" on-tap="_changePath" inverse><span>[[menu.values.NavItem]]</span></button>
-                    </template>
-                </nav>
+        <header class="layout horizontal justified relative">
+            <nav class="fit layout center-justified horizontal">
+                <img class="self-center"src="Images/rhea-logo-1.png" alt="rhea-logo"/>
+                <template is="dom-repeat" items="[[menu.items]]" as="menu">
+                    <button is="vi-button" active$="[[_isRoute(currentRoute, menu.values.NavItem)]]" on-tap="_changePath" inverse><span>[[menu.values.NavItem]]</span></button>
+                </template>
+            </nav>
         </header>
          
         <vi-app-route-presenter class="flex relative" current-route="{{currentRoute}}">

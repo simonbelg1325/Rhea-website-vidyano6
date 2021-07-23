@@ -716,6 +716,66 @@
               }
             },
             {
+              "$id": "PersistentObjectAttribute:6787ab35-b890-311b-a473-34bc2c3e839a",
+              "Id": "6787ab35-b890-311b-a473-34bc2c3e839a",
+              "Offset": 40,
+              "Name": "NavSectionHeader",
+              "Label": {
+                "en": "Nav section header"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2ff6a12f-9248-4e97-a97c-9620fd12b5ba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:e9111a4b-bbcf-4046-b610-651c12afa528"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:635262af-a7f5-39bb-8526-6c19678c9ba3",
+              "Id": "635262af-a7f5-39bb-8526-6c19678c9ba3",
+              "Offset": 50,
+              "Name": "NavSectionTitle",
+              "Label": {
+                "en": "Nav section title"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2ff6a12f-9248-4e97-a97c-9620fd12b5ba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:e9111a4b-bbcf-4046-b610-651c12afa528"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:7d32a061-e3b8-3867-a9f6-08b1f3983d3f",
+              "Id": "7d32a061-e3b8-3867-a9f6-08b1f3983d3f",
+              "Offset": 60,
+              "Name": "NavSectionVideo",
+              "Label": {
+                "en": "Nav section video"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:MultiLineString"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:2ff6a12f-9248-4e97-a97c-9620fd12b5ba"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:e9111a4b-bbcf-4046-b610-651c12afa528"
+              }
+            },
+            {
               "$id": "PersistentObjectAttribute:1a33566e-ff30-345d-9faf-2a90b8e6ba10",
               "Id": "1a33566e-ff30-345d-9faf-2a90b8e6ba10",
               "Offset": 30,
@@ -895,6 +955,31 @@
           ],
           "Queries": []
         },
+        "4161e5af-3eb9-3e36-9a87-eb6eb4702ef6": {
+          "$id": "PersistentObject:4161e5af-3eb9-3e36-9a87-eb6eb4702ef6",
+          "SchemaName": "Rhea",
+          "Type": "PageInfo",
+          "Salt": "YC11o0-zJJ4UBcJCzdQgYGLB1y3Hn0QzS8YwY-6ClaBhdAIanUxLMg",
+          "Label": {
+            "en": "Page info"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:f3dacd30-560d-4618-8e7e-22cb3e9cd95d",
+              "Id": "f3dacd30-560d-4618-8e7e-22cb3e9cd95d"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:a9df1a3c-ed9a-401e-8b9b-7bdf147f3d1b",
+              "Id": "a9df1a3c-ed9a-401e-8b9b-7bdf147f3d1b"
+            }
+          ],
+          "Attributes": [],
+          "Queries": [
+            "bcdec2b2-32f9-4c40-a201-c8866f95736b"
+          ]
+        },
         "32cf0ea1-24ca-3714-baec-71d3d18d1022": {
           "$id": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022",
           "SchemaName": "Rhea",
@@ -1011,22 +1096,23 @@
           "$id": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308",
           "SchemaName": "Rhea",
           "Type": "Section",
-          "Salt": "sp9gRR-FLzJwKkTlLK8FlkdCjgnUbw7YQKlcDfFtnVAgGSflShSCjw",
-          "Breadcrumb": "{SectionHeader}",
+          "Salt": "4iZDXHnVLWJjirTOjk-ijAOVPx2EcjXt7tBWvFX1bo-URx5g9ftZWQ",
+          "Breadcrumb": "{Alt}",
           "ContextProperty": "Sections",
+          "SortOptions": "Order",
           "Label": {
             "en": "Section"
           },
           "Groups": [
             {
-              "$id": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d",
-              "Id": "7839c138-ac0d-4892-ab11-14f37c3bee5d"
+              "$id": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657",
+              "Id": "13fd23ca-fee0-4117-812b-c07cafbfc657"
             }
           ],
           "Tabs": [
             {
-              "$id": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534",
-              "Id": "39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+              "$id": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b",
+              "Id": "7cdaa578-6974-429a-8b7c-25d8ab23647b"
             }
           ],
           "Attributes": [
@@ -1044,10 +1130,10 @@
                 "$ref": "DataType:String"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
@@ -1055,19 +1141,20 @@
               "Id": "9029679d-1256-337f-952d-bc8f8af1f9f3",
               "Offset": 20,
               "Name": "Description",
+              "DataTypeHints": "QueryMaxContentLength=0",
               "Label": {
                 "en": "Description"
               },
               "Visibility": 7,
               "ColumnSpan": 1,
               "DataType": {
-                "$ref": "DataType:String"
+                "$ref": "DataType:MultiLineString"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
@@ -1084,10 +1171,10 @@
                 "$ref": "DataType:String"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
@@ -1095,6 +1182,7 @@
               "Id": "50792124-ddd6-3d5d-a6df-c467c8ab7f30",
               "Offset": 40,
               "Name": "Image",
+              "DataTypeHints": "QueryMaxContentLength=0",
               "Label": {
                 "en": "Image"
               },
@@ -1104,10 +1192,10 @@
                 "$ref": "DataType:String"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
@@ -1125,10 +1213,10 @@
                 "$ref": "DataType:Boolean"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
@@ -1146,19 +1234,20 @@
                 "$ref": "DataType:Boolean"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
               "$id": "PersistentObjectAttributeWithReference:dc22eec9-3c25-3346-b866-91fae595404e",
               "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
               "DisplayAttribute": "NavItem",
-              "LookupId": "dbd50801-b85e-475f-a955-81937f5cac55",
+              "LookupId": "bbc8c59d-bc1f-4a25-baaa-0c90e416d3f3",
               "Id": "dc22eec9-3c25-3346-b866-91fae595404e",
               "Offset": 70,
+              "Rules": "Required",
               "Name": "NavSection",
               "Label": {
                 "en": "Nav section"
@@ -1169,10 +1258,10 @@
                 "$ref": "DataType:Reference"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
@@ -1190,79 +1279,16 @@
                 "$ref": "DataType:Int32"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
-              }
-            },
-            {
-              "$id": "PersistentObjectAttribute:fecd9012-f1cd-3491-9a0b-d83d0271974a",
-              "Id": "fecd9012-f1cd-3491-9a0b-d83d0271974a",
-              "Offset": 90,
-              "Rules": "NotEmpty",
-              "Name": "SectionHeader",
-              "Label": {
-                "en": "Section header"
-              },
-              "Visibility": 7,
-              "ColumnSpan": 1,
-              "DataType": {
-                "$ref": "DataType:String"
-              },
-              "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
-              },
-              "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
-              }
-            },
-            {
-              "$id": "PersistentObjectAttribute:e4aac297-9b6f-30d9-931b-a85257634d76",
-              "Id": "e4aac297-9b6f-30d9-931b-a85257634d76",
-              "Offset": 100,
-              "Rules": "NotEmpty",
-              "Name": "SectionTitle",
-              "Label": {
-                "en": "Section title"
-              },
-              "Visibility": 7,
-              "ColumnSpan": 1,
-              "DataType": {
-                "$ref": "DataType:String"
-              },
-              "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
-              },
-              "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
-              }
-            },
-            {
-              "$id": "PersistentObjectAttribute:eeeac4dc-1dec-38a6-9578-46a2a25e2b64",
-              "Id": "eeeac4dc-1dec-38a6-9578-46a2a25e2b64",
-              "Offset": 110,
-              "Rules": "NotEmpty; IsUrl",
-              "Name": "SectionVideoUrl",
-              "Label": {
-                "en": "Section video url"
-              },
-              "Visibility": 7,
-              "ColumnSpan": 1,
-              "DataType": {
-                "$ref": "DataType:String"
-              },
-              "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
-              },
-              "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
               "$id": "PersistentObjectAttribute:6df16708-0cd9-314f-b5e4-af94ebfdd78e",
               "Id": "6df16708-0cd9-314f-b5e4-af94ebfdd78e",
-              "Offset": 120,
+              "Offset": 90,
               "Name": "TopLine",
               "Label": {
                 "en": "Top line"
@@ -1273,18 +1299,19 @@
                 "$ref": "DataType:String"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             },
             {
               "$id": "PersistentObjectAttribute:6a323fb4-7331-3962-8441-0a698bc58350",
               "Id": "6a323fb4-7331-3962-8441-0a698bc58350",
-              "Offset": 130,
+              "Offset": 100,
               "Rules": "IsUrl",
               "Name": "VideoUrl",
+              "DataTypeHints": "QueryMaxContentLength=0",
               "Label": {
                 "en": "Video url"
               },
@@ -1294,10 +1321,10 @@
                 "$ref": "DataType:String"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:7839c138-ac0d-4892-ab11-14f37c3bee5d"
+                "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:39f3d5c3-4ca9-462e-a193-ddc1a6f75534"
+                "$ref": "PersistentObjectAttributeTab:7cdaa578-6974-429a-8b7c-25d8ab23647b"
               }
             }
           ],
@@ -1318,6 +1345,19 @@
           },
           "Columns": []
         },
+        "24d3e701-f0a3-40ed-92f0-2643cfedd472": {
+          "$id": "Query:24d3e701-f0a3-40ed-92f0-2643cfedd472",
+          "Source": "Database.Sections",
+          "AutoQuery": true,
+          "Name": "Sections",
+          "Label": {
+            "en": "Sections"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
+          },
+          "Columns": []
+        },
         "5a83d1d1-2388-45ca-a9f4-a1b2eb0d5501": {
           "$id": "Query:5a83d1d1-2388-45ca-a9f4-a1b2eb0d5501",
           "Source": "Database.Contacts",
@@ -1331,41 +1371,14 @@
           },
           "Columns": []
         },
-        "643ae5cb-e97a-435d-b8c3-b2e3a64c2ff2": {
-          "$id": "Query:643ae5cb-e97a-435d-b8c3-b2e3a64c2ff2",
-          "Source": "Custom.GetHomePageInfo",
-          "AutoQuery": true,
-          "Name": "GetHomePageInfo",
-          "IsHidden": true,
-          "Label": {
-            "en": "Get home page info"
-          },
-          "PersistentObject": {
-            "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
-          },
-          "Columns": []
-        },
-        "8a898c2a-6e1a-4cb6-8393-9c2b2b1fea22": {
-          "$id": "Query:8a898c2a-6e1a-4cb6-8393-9c2b2b1fea22",
+        "9f8a0c96-7d42-4253-bd13-44f83431689a": {
+          "$id": "Query:9f8a0c96-7d42-4253-bd13-44f83431689a",
           "Source": "Custom.GetMenuItems",
           "AutoQuery": true,
           "Name": "GetMenuItems",
           "IsHidden": true,
           "Label": {
             "en": "Get menu items"
-          },
-          "PersistentObject": {
-            "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
-          },
-          "Columns": []
-        },
-        "8af266ee-fe07-4fc3-a32e-bea6f7726910": {
-          "$id": "Query:8af266ee-fe07-4fc3-a32e-bea6f7726910",
-          "Source": "Database.Sections",
-          "AutoQuery": true,
-          "Name": "Sections",
-          "Label": {
-            "en": "Sections"
           },
           "PersistentObject": {
             "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
@@ -1397,6 +1410,19 @@
               }
             }
           ]
+        },
+        "bcdec2b2-32f9-4c40-a201-c8866f95736b": {
+          "$id": "Query:bcdec2b2-32f9-4c40-a201-c8866f95736b",
+          "Source": "Custom.GetHomePageInfo",
+          "AutoQuery": true,
+          "Name": "GetHomePageInfo",
+          "Label": {
+            "en": "GetHomePageInfo"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
+          },
+          "Columns": []
         },
         "dbd50801-b85e-475f-a955-81937f5cac55": {
           "$id": "Query:dbd50801-b85e-475f-a955-81937f5cac55",
@@ -1444,12 +1470,32 @@
           "Query": {
             "$ref": "Query:dbd50801-b85e-475f-a955-81937f5cac55"
           }
+        },
+        {
+          "Offset": 20,
+          "Title": {
+            "en": "Sections"
+          },
+          "Name": "Sections",
+          "Query": {
+            "$ref": "Query:24d3e701-f0a3-40ed-92f0-2643cfedd472"
+          }
+        },
+        {
+          "Offset": 30,
+          "Title": {
+            "en": "PageInfo"
+          },
+          "Name": "PageInfo",
+          "PersistentObject": {
+            "$ref": "PersistentObject:4161e5af-3eb9-3e36-9a87-eb6eb4702ef6"
+          }
         }
       ]
     }
   ],
   "Reports": [],
   "ServiceVersion": "6.0.20210322.2897-rc1+a5e9958",
-  "ModelHash": "hCyJ4hvZ56a+9Nl7lACfG3q1zBxasEam4p9UDPgB2iw=",
+  "ModelHash": "6j27LyqBOurBcc4tW6y25K3CVdY9hbNP376P2ekImLA=",
   "SeederHash": "yob+BuFRqrhY/0LUMpgC4NEWgJ3rsvJWMuAw+eLqK8w="
 }
