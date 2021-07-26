@@ -1,0 +1,23 @@
+﻿<dom-module id="rhea-footer">
+    <template>
+        <link rel="stylesheet" href="footer.css"/>
+        <footer>
+            <vi-grid id="footer">
+                <div id="container">
+                    <div id="img-wrapper">
+                        <img src="./Logo/rhea-logo.png" alt="rhea-logo"/>
+                    </div>
+                </div>
+                <div id="footer-wrapper">
+                    <vi-grid>
+                        <template is="dom-repeat" items="[[footer.items]]" as="footer">
+                            <button id="button" is="vi-button" label="[[footer.values.NavItem]]" on-tap="_changePage"></button>
+                        </template>
+                    </vi-grid>
+                </div>
+            </vi-grid>
+        </footer>
+    </template>
+</dom-module>
+
+<script src="footer.js"></script>

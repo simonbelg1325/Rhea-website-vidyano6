@@ -10,13 +10,37 @@ namespace Rhea.Service
 
         public IQueryable<Section> GetHomePageInfo(CustomQueryArgs e)
         {
-            var info = this.Sections.Where(x => x.NavSection.Id == x.Id).Select(x => x);
+            var info = this.Sections.Where(x => x.NavSection.NavItem == "HOME").Select(x => x);
 
             return info.AsQueryable();
+        }
 
-            //var navItems = this.Sections.Select(x => x);
+        public IQueryable<Section> GetMaintenanceInfo(CustomQueryArgs e)
+        {
+            var info = this.Sections.Where(x => x.NavSection.NavItem == "MAINTENANCE").Select(x => x);
 
-            //return navItems.AsQueryable();
+            return info.AsQueryable();
+        }
+
+        public IQueryable<Section> GetLegacyInfo(CustomQueryArgs e)
+        {
+            var info = this.Sections.Where(x => x.NavSection.NavItem == "LEGACY").Select(x => x);
+
+            return info.AsQueryable();
+        }
+
+        public IQueryable<Section> GetEnhancedInfo(CustomQueryArgs e)
+        {
+            var info = this.Sections.Where(x => x.NavSection.NavItem == "ENHANCED").Select(x => x);
+
+            return info.AsQueryable();
+        }
+
+        public IQueryable<Section> GetReferencesInfo(CustomQueryArgs e)
+        {
+            var info = this.Sections.Where(x => x.NavSection.NavItem == "REFERENCES").Select(x => x);
+
+            return info.AsQueryable();
         }
 
         public IQueryable<Section> GetMenuItems(CustomQueryArgs e)

@@ -42,5 +42,9 @@
   {
     "outputFile": "wwwroot/WebComponents/PageSection/page-section.css",
     "inputFile": "wwwroot/WebComponents/PageSection/page-section.scss"
+  },
+  {
+    "outputFile": "wwwroot/WebComponents/Footer/footer.css",
+    "inputFile": "wwwroot/WebComponents/Footer/footer.scss"
   }
 ]

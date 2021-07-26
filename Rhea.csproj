@@ -31,7 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\WebComponents\Helpdesk\" />
     <Folder Include="wwwroot\WebComponents\Home\Images\" />
     <Folder Include="wwwroot\WebComponents\MenuSection\Video\" />
     <Folder Include="wwwroot\WebComponents\Wrapper\Images\" />

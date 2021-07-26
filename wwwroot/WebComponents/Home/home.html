@@ -4,6 +4,19 @@
         <vi-scroller class="flex" no-horizontal>
             <rhea-menu-section home="[[home]]"></rhea-menu-section>
             <rhea-page-section query="[[info]]"></rhea-page-section>
+            <services-container>
+                <h1>Our Services</h1>
+                <vi-grid>
+                    <template is="dom-repeat" items="[[services.items]]" as="services">
+                        <services-card>
+                            <img src="[[services.values.Image]]" alt=""/>
+                            <h2>[[services.values.Title]]</h2>
+                            <p>[[services.values.Message]]</p>
+                        </services-card>
+                    </template>
+                </vi-grid>
+            </services-container>
+            <rhea-footer></rhea-footer>
         </vi-scroller>
     </template>
 </dom-module>

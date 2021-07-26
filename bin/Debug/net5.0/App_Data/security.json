@@ -10,6 +10,11 @@
       "UserId": "32ab208f-7a3e-4f84-8ae7-c13bf459f17f"
     },
     {
+      "Id": "b05847f2-9f66-4a29-a6fb-6603d6913d47",
+      "Resource": "QueryRead/Rhea.OurService",
+      "UserId": "32ab208f-7a3e-4f84-8ae7-c13bf459f17f"
+    },
+    {
       "Id": "d70e0743-afe5-4b3c-a3b4-55bec5153c42",
       "Resource": "QueryRead/Rhea.PageInfo",
       "UserId": "32ab208f-7a3e-4f84-8ae7-c13bf459f17f"
@@ -27,6 +32,11 @@
     {
       "Id": "0ec706e2-93dd-4064-b62b-01a2aff1aa0a",
       "Resource": "QueryReadEditNewDelete/Rhea.NavSection",
+      "UserId": "d2f993da-657f-414a-8394-49700c373a4a"
+    },
+    {
+      "Id": "44597c36-c014-48ca-9c4c-85c1daa6e035",
+      "Resource": "QueryReadEditNewDelete/Rhea.OurService",
       "UserId": "d2f993da-657f-414a-8394-49700c373a4a"
     },
     {

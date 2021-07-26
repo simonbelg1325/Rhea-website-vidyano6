@@ -10,27 +10,23 @@ var Rhea;
             }
             Home.prototype.attached = function () {
                 return __awaiter(this, void 0, void 0, function () {
-                    var _a, query;
-                    return __generator(this, function (_b) {
-                        switch (_b.label) {
+                    var query, servicesQuery;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
                             case 0:
                                 _super.prototype.attached.call(this);
                                 return [4, this.app.initialize];
                             case 1:
-                                _b.sent();
-                                _a = this._setSection;
-                                return [4, this.service.getPersistentObject(null, "PageInfo", null, false)];
+                                _a.sent();
+                                return [4, this.service.getQuery("GetHomePageInfo")];
                             case 2:
-                                _a.apply(this, [_b.sent()]);
-                                return [4, this.section.getQuery("GetHomePageInfo")];
+                                query = _a.sent();
+                                return [4, this.service.getQuery("GetServices")];
                             case 3:
-                                query = _b.sent();
-                                return [4, query.search()];
-                            case 4:
-                                _b.sent();
-                                return [4, this._setInfo(query)];
-                            case 5:
-                                _b.sent();
+                                servicesQuery = _a.sent();
+                                this._setInfo(query);
+                                this._setServices(servicesQuery);
+                                console.log(servicesQuery);
                                 return [2];
                         }
                     });
@@ -55,6 +51,11 @@ var Rhea;
                         home: {
                             type: Boolean,
                             value: true
+                        },
+                        services: {
+                            type: Object,
+                            readOnly: true,
+                            notify: true
                         }
                     }
                 }, "rhea")

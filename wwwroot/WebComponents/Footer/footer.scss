@@ -1,0 +1,39 @@
+﻿:host {
+    #footer{
+        background-color: #4682B4;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        padding: 0 24px;
+        align-items: center;
+
+        #container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 17px 0;
+        }
+
+        #footer-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #button {
+            font-size: 12px;
+            margin-bottom: 16px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #img-wrapper {
+            width: 214px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        
+    }
+}

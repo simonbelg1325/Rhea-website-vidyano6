@@ -24,6 +24,7 @@
     "wwwroot/WebComponents/PageSection/page-section.ts",
     "wwwroot/WebComponents/Legacy/legacy.ts",
     "wwwroot/WebComponents/MenuSection/menu-section.ts",
+    "wwwroot/WebComponents/Footer/footer.ts",
     "wwwroot/WebComponents/Wrapper/wrapper.ts"
 
   ]

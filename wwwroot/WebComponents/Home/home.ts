@@ -14,6 +14,11 @@
             home: {
                 type: Boolean,
                 value: true
+            },
+            services: {
+                type: Object,
+                readOnly: true,
+                notify: true
             }
         }
     }, "rhea")
@@ -21,14 +26,16 @@
     export class Home extends Vidyano.WebComponents.WebComponent {
         section: Vidyano.PersistentObject; private _setSection: (value: Vidyano.PersistentObject) => void;
         info: Vidyano.Query; private _setInfo: (value: Vidyano.Query) => void;
+        services: Vidyano.Query; private _setServices:(value: Vidyano.Query) => void;
 
         async attached() {
             super.attached();
             await this.app.initialize;
-            this._setSection(await this.service.getPersistentObject(null, "PageInfo", null, false));
-            const query = await this.section.getQuery("GetHomePageInfo");
-            await query.search();
-            await this._setInfo(query);
+            const query = await this.service.getQuery("GetHomePageInfo");
+            const servicesQuery = await this.service.getQuery("GetServices");
+            this._setInfo(query);
+            this._setServices(servicesQuery);
+            console.log(servicesQuery);
 
         }
 
