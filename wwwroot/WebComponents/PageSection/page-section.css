@@ -1,6 +1,10 @@
 ﻿:host InfoContainer[light-bg] {
   background: #f9f9f9; }
 
+:host h3 {
+  margin-top: 0 !important;
+  color: #35728f !important; }
+
 :host InfoContainer {
   background: #96adc2;
   display: grid;
@@ -42,14 +46,12 @@
           margin-bottom: 24px;
           font-size: 20px;
           line-height: 1.1;
-          font-weight: 600;
-          /*color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};*/ }
+          font-weight: 600; }
         :host InfoContainer vi-grid ColumnText TextWrapper Heading[light-text],
         :host InfoContainer vi-grid ColumnImg TextWrapper Heading[light-text] {
           color: #f7f8fa; }
         :host InfoContainer vi-grid ColumnText TextWrapper Description,
         :host InfoContainer vi-grid ColumnImg TextWrapper Description {
-          /*max-width: 440px;*/
           font-size: 13px;
           line-height: 24px;
           color: #fff; }

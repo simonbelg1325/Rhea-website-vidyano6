@@ -26,14 +26,10 @@ var Rhea;
                                 servicesQuery = _a.sent();
                                 this._setInfo(query);
                                 this._setServices(servicesQuery);
-                                console.log(servicesQuery);
                                 return [2];
                         }
                     });
                 });
-            };
-            Home.prototype._sizeChanged = function () {
-                Polymer.dom(this.root).querySelector("#list").fire("iron-resize");
             };
             Home = __decorate([
                 Vidyano.WebComponents.WebComponent.register({

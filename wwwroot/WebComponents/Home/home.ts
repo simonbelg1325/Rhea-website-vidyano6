@@ -35,13 +35,7 @@
             const servicesQuery = await this.service.getQuery("GetServices");
             this._setInfo(query);
             this._setServices(servicesQuery);
-            console.log(servicesQuery);
 
         }
-
-        private _sizeChanged() {
-            (<any>Polymer.dom(this.root).querySelector("#list")).fire("iron-resize");
-        }
-
     }
 }

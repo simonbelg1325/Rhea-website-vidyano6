@@ -9,7 +9,7 @@
                 type: Object,
                 readOnly: true,
                 notify: true
-}
+            }
         }
     }, "rhea")
 

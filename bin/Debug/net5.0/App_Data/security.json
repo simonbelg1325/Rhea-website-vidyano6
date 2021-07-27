@@ -5,6 +5,11 @@
   },
   "Rights": [
     {
+      "Id": "d30bc8fe-20e0-47bf-88d5-f17fb9b5526a",
+      "Resource": "QueryRead/Rhea.Contact",
+      "UserId": "32ab208f-7a3e-4f84-8ae7-c13bf459f17f"
+    },
+    {
       "Id": "fc5c779c-0111-42a4-8e9d-1f0e53b8fbde",
       "Resource": "QueryRead/Rhea.NavSection",
       "UserId": "32ab208f-7a3e-4f84-8ae7-c13bf459f17f"
@@ -25,9 +30,19 @@
       "UserId": "d2f993da-657f-414a-8394-49700c373a4a"
     },
     {
+      "Id": "f002197a-52c8-47c5-9661-d5732f3d9eb1",
+      "Resource": "QueryRead/Rhea.Reference",
+      "UserId": "32ab208f-7a3e-4f84-8ae7-c13bf459f17f"
+    },
+    {
       "Id": "db87b2e2-86a8-4288-bd93-661422f2bb2a",
       "Resource": "QueryRead/Rhea.Section",
       "UserId": "32ab208f-7a3e-4f84-8ae7-c13bf459f17f"
+    },
+    {
+      "Id": "8cc7b8c5-dda3-4856-b74c-0054481bb8b6",
+      "Resource": "QueryReadEditNewDelete/Rhea.Contact",
+      "UserId": "d2f993da-657f-414a-8394-49700c373a4a"
     },
     {
       "Id": "0ec706e2-93dd-4064-b62b-01a2aff1aa0a",
@@ -37,6 +52,11 @@
     {
       "Id": "44597c36-c014-48ca-9c4c-85c1daa6e035",
       "Resource": "QueryReadEditNewDelete/Rhea.OurService",
+      "UserId": "d2f993da-657f-414a-8394-49700c373a4a"
+    },
+    {
+      "Id": "e9093dc5-5245-4031-8682-3c4de1363898",
+      "Resource": "QueryReadEditNewDelete/Rhea.Reference",
       "UserId": "d2f993da-657f-414a-8394-49700c373a4a"
     },
     {

@@ -36,9 +36,9 @@ namespace Rhea.Service
             return info.AsQueryable();
         }
 
-        public IQueryable<Section> GetReferencesInfo(CustomQueryArgs e)
+        public IQueryable<Reference> GetReferencesInfo(CustomQueryArgs e)
         {
-            var info = this.Sections.Where(x => x.NavSection.NavItem == "REFERENCES").Select(x => x);
+            var info = this.References.Select(x => x);
 
             return info.AsQueryable();
         }

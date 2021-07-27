@@ -1128,14 +1128,14 @@
               "Id": "9029679d-1256-337f-952d-bc8f8af1f9f3",
               "Offset": 20,
               "Name": "Description",
-              "DataTypeHints": "QueryMaxContentLength=0",
+              "DataTypeHints": "QueryMaxContentLength=0;",
               "Label": {
                 "en": "Description"
               },
               "Visibility": 7,
               "ColumnSpan": 1,
               "DataType": {
-                "$ref": "DataType:MultiString"
+                "$ref": "DataType:MultiLineString"
               },
               "Group": {
                 "$ref": "PersistentObjectAttributeGroup:13fd23ca-fee0-4117-812b-c07cafbfc657"
@@ -1413,6 +1413,19 @@
           },
           "Columns": []
         },
+        "8c6d4127-e959-45d4-9ba8-50b1d2a3ef79": {
+          "$id": "Query:8c6d4127-e959-45d4-9ba8-50b1d2a3ef79",
+          "Source": "Database.References",
+          "AutoQuery": true,
+          "Name": "GetReferences",
+          "Label": {
+            "en": "References"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022"
+          },
+          "Columns": []
+        },
         "9f8a0c96-7d42-4253-bd13-44f83431689a": {
           "$id": "Query:9f8a0c96-7d42-4253-bd13-44f83431689a",
           "Source": "Custom.GetMenuItems",
@@ -1568,6 +1581,16 @@
           "Name": "OurServices",
           "Query": {
             "$ref": "Query:8c5f0b8b-729a-4b1c-90a2-291dbc20a511"
+          }
+        },
+        {
+          "Offset": 50,
+          "Title": {
+            "en": "References"
+          },
+          "Name": "References",
+          "Query": {
+            "$ref": "Query:eff90ad9-28c3-461c-916d-5b07444a9a9d"
           }
         }
       ]

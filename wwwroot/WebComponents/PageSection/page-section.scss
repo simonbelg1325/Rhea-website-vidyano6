@@ -3,6 +3,11 @@
         background: #f9f9f9;
     }
 
+    h3 {
+        margin-top: 0 !important;
+        color: rgb(53, 114, 143) !important;
+    }
+
     InfoContainer {
         background: #96adc2;
         display: grid;
@@ -49,7 +54,6 @@
                         font-size: 20px;
                         line-height: 1.1;
                         font-weight: 600;
-                        /*color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};*/
                     }
 
                     Heading[light-text] {
@@ -57,12 +61,13 @@
                     }
 
                     Description {
-                        /*max-width: 440px;*/
                         font-size: 13px;
                         line-height: 24px;
                         color: #fff;
-                    }
 
+                        
+                    }
+                    
                     Description[dark-text]{
                         color: #010606;
                     }

@@ -10,9 +10,20 @@ var Rhea;
             }
             Enhanced.prototype.attached = function () {
                 return __awaiter(this, void 0, void 0, function () {
+                    var query;
                     return __generator(this, function (_a) {
-                        _super.prototype.attached.call(this);
-                        return [2];
+                        switch (_a.label) {
+                            case 0:
+                                _super.prototype.attached.call(this);
+                                return [4, this.app.initialize];
+                            case 1:
+                                _a.sent();
+                                return [4, this.service.getQuery("GetEnhancedInfo")];
+                            case 2:
+                                query = _a.sent();
+                                this._setInfo(query);
+                                return [2];
+                        }
                     });
                 });
             };
@@ -22,6 +33,11 @@ var Rhea;
                         enhanced: {
                             type: Boolean,
                             value: true
+                        },
+                        info: {
+                            type: Object,
+                            readOnly: true,
+                            notify: true
                         }
                     }
                 }, "rhea")
