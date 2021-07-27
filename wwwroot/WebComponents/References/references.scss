@@ -2,4 +2,41 @@
     display: flex;
     font-size: 16px;
     letter-spacing: 0.2px;
+
+    vi-grid {
+        z-index: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        justify-content: center;
+        margin-bottom: 50px;
+        align-items: center;
+
+        h1 {
+            font-size: 20px;
+            color: rgb(0, 168, 233);
+            margin-bottom: 64px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .reference-card {
+            width: 180px;
+            align-content: center;
+            display: grid
+
+            &:hover {
+                transform: scale(1.02);
+                transition: all 0.2s ease-in-out;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    
 }

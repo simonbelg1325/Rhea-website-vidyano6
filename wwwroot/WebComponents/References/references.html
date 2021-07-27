@@ -3,6 +3,14 @@
         <link rel="stylesheet" href="references.css"/>
         <vi-scroller class="flex" no-horizontal>
             <rhea-menu-section references="[[references]]"></rhea-menu-section>
+            <vi-grid>
+                <h1>They already trust us</h1>
+                <template is="dom-repeat" items="[[info.items]]" as="references">
+                    <div class="reference-card">
+                        <img src="[[references.values.Image]]" alt="[[references.values.Alt]]"/>
+                    </div> 
+                </template>
+            </vi-grid>
             <rhea-footer/>
         </vi-scroller>
     </template>

@@ -9,6 +9,7 @@ namespace Rhea.Service.Actions
         [Key]
         public int Id { get; set; }
         public string Image { get; set; }
+        public string Alt { get; set; }
         public int Order { get; set; }
         public virtual NavSection NavSection { get; set; }
 

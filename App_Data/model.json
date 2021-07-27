@@ -853,6 +853,7 @@
               "Offset": 20,
               "Rules": "NotEmpty",
               "Name": "Message",
+              "DataTypeHints": "QueryMaxContentLength=0",
               "Label": {
                 "en": "Message"
               },
@@ -960,8 +961,8 @@
           ],
           "Attributes": [],
           "Queries": [
+            "231315e1-f450-44cd-892a-e81c48c75122",
             "2566fac6-fc31-4873-8ea8-cb411ceda732",
-            "3018b905-2786-4697-be23-76842873241b",
             "49582a2d-e28c-427c-9de7-4b1a2c3b106d",
             "bcdec2b2-32f9-4c40-a201-c8866f95736b",
             "e4f1dcf3-a823-4596-9df3-a006e57405d4"
@@ -971,31 +972,53 @@
           "$id": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022",
           "SchemaName": "Rhea",
           "Type": "Reference",
-          "Salt": "Edjm0w_sUrxsnPAuX2lgI_6hBjX1MZkDLozPMuq5KtWKkMNIQUm5LA",
-          "Breadcrumb": "{Image}",
+          "Salt": "P49lqDcrH3JaA-RgUh9_cpMI8Jaru4x3LLbZioJCDKq_xZWt_eKWBQ",
+          "Breadcrumb": "{Alt}",
           "ContextProperty": "References",
           "Label": {
             "en": "Reference"
           },
           "Groups": [
             {
-              "$id": "PersistentObjectAttributeGroup:b13862d5-556d-45cb-9460-88d08bc53607",
-              "Id": "b13862d5-556d-45cb-9460-88d08bc53607"
+              "$id": "PersistentObjectAttributeGroup:01956ce2-fa48-4d8a-a575-2b36a71e27f9",
+              "Id": "01956ce2-fa48-4d8a-a575-2b36a71e27f9"
             }
           ],
           "Tabs": [
             {
-              "$id": "PersistentObjectAttributeTab:60f00931-bd86-4e7d-a477-ea589f8ba23d",
-              "Id": "60f00931-bd86-4e7d-a477-ea589f8ba23d"
+              "$id": "PersistentObjectAttributeTab:03e1aa0e-2345-42a9-b98d-0b25d3251d81",
+              "Id": "03e1aa0e-2345-42a9-b98d-0b25d3251d81"
             }
           ],
           "Attributes": [
             {
-              "$id": "PersistentObjectAttribute:bd34c1f1-95ca-3e83-b732-680c0c27db3d",
-              "Id": "bd34c1f1-95ca-3e83-b732-680c0c27db3d",
+              "$id": "PersistentObjectAttribute:39a654e5-f350-3a05-af31-a87375fda911",
+              "Id": "39a654e5-f350-3a05-af31-a87375fda911",
               "Offset": 10,
               "Rules": "NotEmpty",
+              "Name": "Alt",
+              "Label": {
+                "en": "Alt"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:01956ce2-fa48-4d8a-a575-2b36a71e27f9"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:03e1aa0e-2345-42a9-b98d-0b25d3251d81"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:bd34c1f1-95ca-3e83-b732-680c0c27db3d",
+              "Id": "bd34c1f1-95ca-3e83-b732-680c0c27db3d",
+              "Offset": 20,
+              "Rules": "NotEmpty",
               "Name": "Image",
+              "DataTypeHints": "QueryMaxContentLength=0",
               "Label": {
                 "en": "Image"
               },
@@ -1005,19 +1028,19 @@
                 "$ref": "DataType:String"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:b13862d5-556d-45cb-9460-88d08bc53607"
+                "$ref": "PersistentObjectAttributeGroup:01956ce2-fa48-4d8a-a575-2b36a71e27f9"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:60f00931-bd86-4e7d-a477-ea589f8ba23d"
+                "$ref": "PersistentObjectAttributeTab:03e1aa0e-2345-42a9-b98d-0b25d3251d81"
               }
             },
             {
               "$id": "PersistentObjectAttributeWithReference:99b36a2b-a908-3e51-848a-7288737f0f58",
               "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
               "DisplayAttribute": "NavItem",
-              "LookupId": "dbd50801-b85e-475f-a955-81937f5cac55",
+              "LookupId": "bbc8c59d-bc1f-4a25-baaa-0c90e416d3f3",
               "Id": "99b36a2b-a908-3e51-848a-7288737f0f58",
-              "Offset": 20,
+              "Offset": 30,
               "Name": "NavSection",
               "Label": {
                 "en": "Nav section"
@@ -1028,16 +1051,16 @@
                 "$ref": "DataType:Reference"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:b13862d5-556d-45cb-9460-88d08bc53607"
+                "$ref": "PersistentObjectAttributeGroup:01956ce2-fa48-4d8a-a575-2b36a71e27f9"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:60f00931-bd86-4e7d-a477-ea589f8ba23d"
+                "$ref": "PersistentObjectAttributeTab:03e1aa0e-2345-42a9-b98d-0b25d3251d81"
               }
             },
             {
               "$id": "PersistentObjectAttribute:1d527be2-9c05-3e7c-8046-5fa3cf721f60",
               "Id": "1d527be2-9c05-3e7c-8046-5fa3cf721f60",
-              "Offset": 30,
+              "Offset": 40,
               "Rules": "Required",
               "Name": "Order",
               "Label": {
@@ -1049,31 +1072,10 @@
                 "$ref": "DataType:Int32"
               },
               "Group": {
-                "$ref": "PersistentObjectAttributeGroup:b13862d5-556d-45cb-9460-88d08bc53607"
+                "$ref": "PersistentObjectAttributeGroup:01956ce2-fa48-4d8a-a575-2b36a71e27f9"
               },
               "Tab": {
-                "$ref": "PersistentObjectAttributeTab:60f00931-bd86-4e7d-a477-ea589f8ba23d"
-              }
-            },
-            {
-              "$id": "PersistentObjectAttribute:f8f2128c-f057-3ea9-b80d-525b95a03abb",
-              "Id": "f8f2128c-f057-3ea9-b80d-525b95a03abb",
-              "Offset": 40,
-              "Rules": "NotEmpty",
-              "Name": "Title",
-              "Label": {
-                "en": "Title"
-              },
-              "Visibility": 7,
-              "ColumnSpan": 1,
-              "DataType": {
-                "$ref": "DataType:String"
-              },
-              "Group": {
-                "$ref": "PersistentObjectAttributeGroup:b13862d5-556d-45cb-9460-88d08bc53607"
-              },
-              "Tab": {
-                "$ref": "PersistentObjectAttributeTab:60f00931-bd86-4e7d-a477-ea589f8ba23d"
+                "$ref": "PersistentObjectAttributeTab:03e1aa0e-2345-42a9-b98d-0b25d3251d81"
               }
             }
           ],
@@ -1332,6 +1334,19 @@
           },
           "Columns": []
         },
+        "231315e1-f450-44cd-892a-e81c48c75122": {
+          "$id": "Query:231315e1-f450-44cd-892a-e81c48c75122",
+          "Source": "Custom.GetReferencesInfo",
+          "AutoQuery": true,
+          "Name": "GetReferencesInfo",
+          "Label": {
+            "en": "Get references info"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022"
+          },
+          "Columns": []
+        },
         "24d3e701-f0a3-40ed-92f0-2643cfedd472": {
           "$id": "Query:24d3e701-f0a3-40ed-92f0-2643cfedd472",
           "Source": "Database.Sections",
@@ -1359,17 +1374,16 @@
           },
           "Columns": []
         },
-        "3018b905-2786-4697-be23-76842873241b": {
-          "$id": "Query:3018b905-2786-4697-be23-76842873241b",
-          "Offset": 40,
-          "Source": "Custom.GetReferencesInfo",
+        "28b1a965-7093-406a-af1a-e99637896684": {
+          "$id": "Query:28b1a965-7093-406a-af1a-e99637896684",
+          "Source": "Database.References",
           "AutoQuery": true,
-          "Name": "GetReferencesInfo",
+          "Name": "References",
           "Label": {
-            "en": "GetReferencesInfo"
+            "en": "References"
           },
           "PersistentObject": {
-            "$ref": "PersistentObject:2f304469-ca79-3773-99b8-e6ba5d269308"
+            "$ref": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022"
           },
           "Columns": []
         },
@@ -1410,19 +1424,6 @@
           },
           "PersistentObject": {
             "$ref": "PersistentObject:14fbdb7e-ddad-3ef5-94e0-dc3ae9c6d682"
-          },
-          "Columns": []
-        },
-        "8c6d4127-e959-45d4-9ba8-50b1d2a3ef79": {
-          "$id": "Query:8c6d4127-e959-45d4-9ba8-50b1d2a3ef79",
-          "Source": "Database.References",
-          "AutoQuery": true,
-          "Name": "GetReferences",
-          "Label": {
-            "en": "References"
-          },
-          "PersistentObject": {
-            "$ref": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022"
           },
           "Columns": []
         },
@@ -1518,19 +1519,6 @@
             "$ref": "PersistentObject:dc572bd0-20a2-39dc-8079-767273a4ff12"
           },
           "Columns": []
-        },
-        "eff90ad9-28c3-461c-916d-5b07444a9a9d": {
-          "$id": "Query:eff90ad9-28c3-461c-916d-5b07444a9a9d",
-          "Source": "Database.References",
-          "AutoQuery": true,
-          "Name": "References",
-          "Label": {
-            "en": "References"
-          },
-          "PersistentObject": {
-            "$ref": "PersistentObject:32cf0ea1-24ca-3714-baec-71d3d18d1022"
-          },
-          "Columns": []
         }
       }
     }
@@ -1590,7 +1578,7 @@
           },
           "Name": "References",
           "Query": {
-            "$ref": "Query:eff90ad9-28c3-461c-916d-5b07444a9a9d"
+            "$ref": "Query:28b1a965-7093-406a-af1a-e99637896684"
           }
         }
       ]
@@ -1598,6 +1586,6 @@
   ],
   "Reports": [],
   "ServiceVersion": "6.0.20210322.2897-rc1+a5e9958",
-  "ModelHash": "/oeC6ZUw1r0ui0MYCy55U5vAO366fk/yB+UnbGspFyA=",
+  "ModelHash": "CM/lHbu/miNW2G18L6kfZRZjCDbbt7QAIDKDrCs4Rto=",
   "SeederHash": "yob+BuFRqrhY/0LUMpgC4NEWgJ3rsvJWMuAw+eLqK8w="
 }
