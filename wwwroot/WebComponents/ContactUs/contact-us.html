@@ -3,7 +3,65 @@
         <link rel="stylesheet" href="contact-us.css"/>
         <vi-scroller class="flex" no-horizontal>
             <rhea-menu-section contact="[[contact]]"></rhea-menu-section>
+            <template is="dom-repeat" items="[[contactInfo.items]]" as="contact">
+                <div class="map">
+                    <iframe src="[[contact.values.MapImage]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </template>
+            <vi-grid>
+                <h2 class="header">GET IN TOUCH</h2>
+                <template is="dom-repeat" items="[[contactInfo.items]]" as="contact">
+                    <div class="contact-info layout center-justified">
+                        <template is="dom-if" if="[[contact.values.Address]]">
+                            <div class="contact-content">
+                                <vi-icon source="rhea-address"></vi-icon>
+                                <p>[[contact.values.Address]]</p>
+                            </div>
+                        </template>
+                        <template is="dom-if" if="[[contact.values.Email]]">
+                            <div class="contact-content">
+                                <vi-icon source="rhea-email"></vi-icon>
+                                <p>[[contact.values.Email]]</p>
+                            </div>
+                        </template>
+                        <template is="dom-if" if="[[contact.values.Tel]]">
+                            <div class="contact-content">
+                                <vi-icon source="rhea-tel"></vi-icon>
+                                <p>[[contact.values.Tel]]</p>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+            </vi-grid>
+            <rhea-footer></rhea-footer>
         </vi-scroller>
     </template>
 </dom-module>
 <script src="contact-us.js"></script>
+
+
+<vi-icon name="rhea-address">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width: 32px; height: 32px; position: absolute; left: 50%; top: 50%; margin-top: -25%; margin-left: -25%;">
+        <defs/>
+        <g fill="none" fill-rule="evenodd">
+            <path d="M-5-2h24v24H-5z"/>
+            <path fill="#fff" d="M7 0C3.13 0 0 3.13 0 7c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C9.58 16.92 14 11.17 14 7c0-3.87-3.13-7-7-7zm0 9.5C5.62 9.5 4.5 8.38 4.5 7S5.62 4.5 7 4.5 9.5 5.62 9.5 7 8.38 9.5 7 9.5z"/>
+        </g>
+    </svg>
+</vi-icon>
+
+<vi-icon name="rhea-email">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width: 32px; height: 32px;">
+      <defs/>
+      <path fill="#fff" fill-rule="evenodd" d="M7.07692308 10.9230769L16.5 19l9.4230769-8.0769231-.8076923-.8076923L16.5 17.5l-8.61538462-7.3846154-.8076923.8076923zM6.00359486 8C4.89703997 8 4 8.89451376 4 9.99406028V22.0059397C4 23.1072288 4.88976324 24 6.00359486 24H26.9964051C28.10296 24 29 23.1054862 29 22.0059397V9.99406028C29 8.8927712 28.1102368 8 26.9964051 8H6.00359486z"/>
+    </svg>
+</vi-icon>
+<vi-icon name="rhea-tel">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width: 32px; height: 32px; position: absolute; left: 50%; top: 50%; margin-top: -25%; margin-left: -25%;">
+      <defs/>
+      <g fill="none" fill-rule="evenodd">
+        <path d="M-3-3h24v24H-3z"/>
+        <path fill="#fff" d="M16.23 12.26l-2.54-.29c-.61-.07-1.21.14-1.64.57l-1.84 1.84c-2.83-1.44-5.15-3.75-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52C5.63.77 4.78.01 3.76.01H2.03C.9.01-.04.95.03 2.08c.53 8.54 7.36 15.36 15.89 15.89 1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98z"/>
+      </g>
+    </svg>
+</vi-icon>

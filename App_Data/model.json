@@ -608,6 +608,7 @@
               "Offset": 30,
               "Rules": "NotEmpty",
               "Name": "MapImage",
+              "DataTypeHints": "QueryMaxContentLength=0",
               "Label": {
                 "en": "Map image"
               },
@@ -1579,6 +1580,16 @@
           "Name": "References",
           "Query": {
             "$ref": "Query:28b1a965-7093-406a-af1a-e99637896684"
+          }
+        },
+        {
+          "Offset": 60,
+          "Title": {
+            "en": "Contacts"
+          },
+          "Name": "Contacts",
+          "Query": {
+            "$ref": "Query:5a83d1d1-2388-45ca-a9f4-a1b2eb0d5501"
           }
         }
       ]

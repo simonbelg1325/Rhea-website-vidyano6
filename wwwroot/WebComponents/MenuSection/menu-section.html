@@ -4,92 +4,68 @@
         <template is="dom-repeat" items="[[main.items]]" as="main">
             <template is="dom-if" if="[[_home(main.values.NavItem)]]">
                 <template is="dom-if" if="{{home}}">
-                    <MenuContainer>
-                        <MenuBg>
-                            <div class="video-wrapper">
-                                <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
-                        </MenuBg>
+                    <div class="video-wrapper">
+                        <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         <MenuContent>
                             <MenuH1>[[main.values.NavSectionHeader]]</MenuH1>
                             <MenuP>[[main.values.NavSectionTitle]]</MenuP>
                         </MenuContent>
-                    </MenuContainer>
+                    </div>
                 </template>
             </template>
             <template is="dom-if" if="[[_maintenance(main.values.NavItem)]]">
                 <template is="dom-if" if="{{maintenance}}">
-                    <MenuContainer>
-                        <MenuBg>
-                            <div class="video-wrapper">
-                                <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
-                        </MenuBg>
+                    <div class="video-wrapper">
+                        <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         <MenuContent>
                             <MenuH1>[[main.values.NavSectionHeader]]</MenuH1>
                             <MenuP>[[main.values.NavSectionTitle]]</MenuP>
                         </MenuContent>
-                    </MenuContainer>
+                    </div>
                 </template>
             </template>
             <template is="dom-if" if="[[_legacy(main.values.NavItem)]]">
                 <template is="dom-if" if="{{legacy}}">
-                    <MenuContainer>
-                        <MenuBg>
-                            <div class="video-wrapper">
-                                <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
-                        </MenuBg>
+                    <div class="video-wrapper">
+                        <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         <MenuContent>
                             <MenuH1>[[main.values.NavSectionHeader]]</MenuH1>
                             <MenuP>[[main.values.NavSectionTitle]]</MenuP>
                         </MenuContent>
-                    </MenuContainer>
+                    </div>
                 </template>
             </template>
             <template is="dom-if" if="[[_enhanced(main.values.NavItem)]]">
             <template is="dom-if" if="{{enhanced}}">
-                <MenuContainer>
-                    <MenuBg>
-                        <div class="video-wrapper">
-                            <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </MenuBg>
+                <div class="video-wrapper">
+                    <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <MenuContent>
                         <MenuH1>[[main.values.NavSectionHeader]]</MenuH1>
                         <MenuP>[[main.values.NavSectionTitle]]</MenuP>
                     </MenuContent>
-                </MenuContainer>
+                </div>
             </template>
         </template>
         <template is="dom-if" if="[[_references(main.values.NavItem)]]">
             <template is="dom-if" if="{{references}}">
-                <MenuContainer>
-                    <MenuBg>
-                        <div class="video-wrapper">
-                            <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </MenuBg>
+                <div class="video-wrapper">
+                    <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <MenuContent>
                         <MenuH1>[[main.values.NavSectionHeader]]</MenuH1>
                         <MenuP>[[main.values.NavSectionTitle]]</MenuP>
                     </MenuContent>
-                </MenuContainer>
+                </div>
             </template>
         </template>
         <template is="dom-if" if="[[_contact(main.values.NavItem)]]">
             <template is="dom-if" if="{{contact}}">
-                <MenuContainer>
-                    <MenuBg>
-                        <div class="video-wrapper">
-                            <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </MenuBg>
+                <div class="video-wrapper">
+                    <iframe src="[[main.values.NavSectionVideo]]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <MenuContent>
                         <MenuH1>[[main.values.NavSectionHeader]]</MenuH1>
                         <MenuP>[[main.values.NavSectionTitle]]</MenuP>
                     </MenuContent>
-                </MenuContainer>
+                </div>
             </template>
         </template>
         </template>

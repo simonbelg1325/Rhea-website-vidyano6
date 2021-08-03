@@ -2,4 +2,63 @@
     display: flex;
     font-size: 16px;
     letter-spacing: 0.2px;
+
+    .map {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        object-fit: cover;
+        background: #232a34;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    vi-grid {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4682B4;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 40px;
+
+            .contact-content {
+                background: #90b4d2;;
+                width: 340px;
+                height: 50px;
+                display: flex;
+                border-radius: 50px;
+                justify-content: center;
+                align-items: center;
+
+
+                vi-icon {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+                
+                p{
+                    color: #fff;
+                }
+            }  
+        }
+    }
 }

@@ -5,84 +5,92 @@
         <!-- items should be rendered in a dom-repeat template -->
         <template is="dom-repeat" items="{{query.items}}" as="info">
             <template is="dom-if" if="[[info.values.LightBg]]">
-                <InfoContainer light-bg>
+                <div class="info-container" light-bg>
                     <vi-grid>
                         <template is="dom-if" if="[[info.values.ImgStart]]">
-                            <ColumnImg class="animate__animated animate__fadeInLeft animate__delay-1s">
+                            <div class="column-img animate__animated animate__fadeInLeft animate__delay-1s">
                                 <template is="dom-if" if="[[info.values.Image]]">
                                     <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
                                 </template>
                                 <template is="dom-if" if="[[info.values.VideoUrl]]">
-                                    <iframe src="[[info.values.VideoUrl]]" width="510" height="287" frameborder="0"></iframe>
+                                    <div class="video-wrapper">
+                                        <iframe src="[[info.values.VideoUrl]]" frameborder="0"></iframe>
+                                    </div>
                                 </template>
-                            </ColumnImg>
-                            <ColumnText class="animate__animated animate__fadeInRight animate__delay-1s">
-                                <TextWrapper>
+                            </div>
+                            <div class="column-text animate__animated animate__fadeInRight animate__delay-1s">
+                                <div class="text-wrapper">
                                     <TopLine>[[info.values.TopLine]]</TopLine>
                                     <Heading>[[info.values.Headline]]</Heading>
                                     <Description dark-text inner-h-t-m-l="[[info.values.Description]]" />
-                                </TextWrapper>
-                            </ColumnText>
+                                </div>
+                            </div>
                         </template>
                         <template is="dom-if" if="[[!info.values.ImgStart]]">
-                            <ColumnText class="animate__animated animate__fadeInLeft animate__delay-1s">
-                                <TextWrapper>
+                            <div class="column-text animate__animated animate__fadeInLeft animate__delay-1s">
+                                <div class="text-wrapper">
                                     <TopLine>[[info.values.TopLine]]</TopLine>
                                     <Heading>[[info.values.Headline]]</Heading>
                                     <Description dark-text inner-h-t-m-l="[[info.values.Description]]" />
-                                </TextWrapper>
-                            </ColumnText>
-                            <ColumnImg class="animate__animated animate__fadeInRight animate__delay-1s">
+                                </div>
+                            </div>
+                            <div class="column-img animate__animated animate__fadeInRight animate__delay-1s">
                                 <template is="dom-if" if="[[info.values.Image]]">
                                     <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
                                 </template>
                                 <template is="dom-if" if="[[info.values.VideoUrl]]">
-                                    <iframe src="[[info.values.VideoUrl]]" width="510" height="287" frameborder="0"></iframe>
+                                    <div class="video-wrapper">
+                                        <iframe src="[[info.values.VideoUrl]]" frameborder="0"></iframe>
+                                    </div>
                                 </template>
-                            </ColumnImg>
+                            </div>
                         </template>
                     </vi-grid>
-                </InfoContainer>
+                </div>
             </template>
             <template is="dom-if" if="[[!info.values.LightBg]]">
-                <InfoContainer>
+                <div class="info-container">
                     <vi-grid>
                         <template is="dom-if" if="[[info.values.ImgStart]]">
-                            <ColumnImg class="animate__animated animate__fadeInLeft animate__delay-1s">
+                            <div class="column-img animate__animated animate__fadeInLeft animate__delay-1s">
                                 <template is="dom-if" if="[[info.values.Image]]">
                                     <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
                                 </template>
                                 <template is="dom-if" if="[[info.values.VideoUrl]]">
-                                    <iframe src="[[info.values.VideoUrl]]" width="510" height="287" frameborder="0"></iframe>
+                                    <div class="video-wrapper">
+                                        <iframe src="[[info.values.VideoUrl]]" frameborder="0"></iframe>
+                                    </div>
                                 </template>
-                            </ColumnImg>
-                            <ColumnText class="animate__animated animate__fadeInRight animate__delay-1s">
-                                <TextWrapper>
+                            </div>
+                            <div class="column-text animate__animated animate__fadeInRight animate__delay-1s">
+                                <div class="text-wrapper">
                                     <TopLine>[[info.values.TopLine]]</TopLine>
                                     <Heading light-text>[[info.values.Headline]]</Heading>
                                     <Description inner-h-t-m-l="[[info.values.Description]]" />
-                                </TextWrapper>
-                            </ColumnText>
+                                </div>
+                            </div>
                         </template>
                         <template is="dom-if" if="[[!info.values.ImgStart]]">
-                            <ColumnText class="animate__animated animate__fadeInLeft animate__delay-1s">
-                                <TextWrapper>
+                            <div class="column-text animate__animated animate__fadeInLeft animate__delay-1s">
+                                <div class="text-wrapper">
                                     <TopLine>[[info.values.TopLine]]</TopLine>
                                     <Heading light-text>[[info.values.Headline]]</Heading>
                                     <Description inner-h-t-m-l="[[info.values.Description]]" />
-                                </TextWrapper>
-                            </ColumnText>
-                            <ColumnImg class="animate__animated animate__fadeInRight animate__delay-1s">
+                                </div>
+                            </div>
+                            <div class="column-img animate__fadeInRight animate__delay-1s">
                                 <template is="dom-if" if="[[info.values.Image]]">
                                     <img src="[[info.values.Image]]" alt="[[info.values.Alt]]"/>
                                 </template>
                                 <template is="dom-if" if="[[info.values.VideoUrl]]">
-                                    <iframe src="[[info.values.VideoUrl]]" width="510" height="287" frameborder="0"></iframe>
+                                    <div class="video-wrapper">
+                                        <iframe src="[[info.values.VideoUrl]]" frameborder="0"></iframe>
+                                    </div>
                                 </template>
-                            </ColumnImg>
+                            </div>
                         </template>
                     </vi-grid>
-                </InfoContainer>
+                </div>
             </template>
         </template>
     </template>
