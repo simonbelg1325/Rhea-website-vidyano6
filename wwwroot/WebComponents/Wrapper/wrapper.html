@@ -3,11 +3,25 @@
         <link rel="stylesheet" href="wrapper.css"/>
         
         <header class="layout horizontal justified relative">
-            <nav class="fit layout center-justified horizontal">
+            <nav class="fit layout center-justified horizontal main">
                 <img class="self-center"src="Images/rhea-logo-1.png" alt="rhea-logo"/>
                 <template is="dom-repeat" items="[[menu.items]]" as="menu">
                     <button is="vi-button" active$="[[_isRoute(currentRoute, menu.values.NavItem)]]" on-tap="_changePath" inverse><span>[[menu.values.NavItem]]</span></button>
                 </template>
+            </nav>
+            
+            <nav class="layout center-justified horizontal side">
+                <img class="self-center"src="Images/rhea-logo-1.png" alt="rhea-logo"/>
+                <div class="nav-icon" on-tap="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="sidebar-container">
+                    <template is="dom-repeat" items="[[menu.items]]" as="menu">
+                        <button is="vi-button" active$="[[_isRoute(currentRoute, menu.values.NavItem)]]" on-tap="_changePath" inverse><span>[[menu.values.NavItem]]</span></button>
+                    </template>
+                </div>
             </nav>
         </header>
          
@@ -24,3 +38,13 @@
 </dom-module>
 
 <script src="wrapper.js"></script>
+
+<vi-icon name="hamburger">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width: 32px; height: 32px; position: absolute; left: 50%; top: 50%; margin-top: -25%; margin-left: -25%;">
+        <defs/>
+        <g fill="none" fill-rule="evenodd">
+            <path d="M-5-2h24v24H-5z"/>
+            <path fill="#fff" d="M7 0C3.13 0 0 3.13 0 7c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C9.58 16.92 14 11.17 14 7c0-3.87-3.13-7-7-7zm0 9.5C5.62 9.5 4.5 8.38 4.5 7S5.62 4.5 7 4.5 9.5 5.62 9.5 7 8.38 9.5 7 9.5z"/>
+        </g>
+    </svg>
+</vi-icon>

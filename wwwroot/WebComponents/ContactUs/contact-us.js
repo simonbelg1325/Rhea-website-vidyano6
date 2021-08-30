@@ -22,6 +22,7 @@ var Rhea;
                             case 2:
                                 query = _a.sent();
                                 this._setContactInfo(query);
+                                this._setIsBusy(false);
                                 return [2];
                         }
                     });
@@ -38,8 +39,14 @@ var Rhea;
                             type: Object,
                             readOnly: true,
                             notify: true
+                        },
+                        isBusy: {
+                            type: Boolean,
+                            readOnly: true,
+                            value: true
                         }
-                    }
+                    },
+                    mediaQueryAttributes: true
                 }, "rhea")
             ], ContactUs);
             return ContactUs;

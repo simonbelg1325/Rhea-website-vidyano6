@@ -6,7 +6,8 @@
                 type: Object,
                 readOnly: true
             }
-        }
+        },
+        mediaQueryAttributes: true
     }, "rhea")
 
     export class Wrapper extends Vidyano.WebComponents.WebComponent {
@@ -33,28 +34,47 @@
             switch (menu.NavItem) {
             case "HOME":
                     this.app.changePath("");
+                    this.querySelector(".sidebar-container").classList.toggle("open");
+                    this.querySelector(".nav-icon").classList.toggle("open");
                     break;
             case "MAINTENANCE":
                     this.app.changePath("maintenance");
+                    this.querySelector(".sidebar-container").classList.toggle("open");
+                    this.querySelector(".nav-icon").classList.toggle("open");
                     break;
             case "LEGACY":
                     this.app.changePath("legacy");
+                    this.querySelector(".sidebar-container").classList.toggle("open");
+                    this.querySelector(".nav-icon").classList.toggle("open");
                     break;
             case "ENHANCED":
                     this.app.changePath("enhanced");
+                    this.querySelector(".sidebar-container").classList.toggle("open");
+                    this.querySelector(".nav-icon").classList.toggle("open");
                     break;
             case "REFERENCES":
                     this.app.changePath("references");
+                    this.querySelector(".sidebar-container").classList.toggle("open");
+                    this.querySelector(".nav-icon").classList.toggle("open");
                     break;
             case "CONTACT US":
                     this.app.changePath("contact-us");
+                    this.querySelector(".sidebar-container").classList.toggle("open");
+                    this.querySelector(".nav-icon").classList.toggle("open");
                     break;
             case "HELPDESK":
                     window.location.href = "https://helpdesk.rhea.be";
+                    this.querySelector(".sidebar-container").classList.toggle("open");
+                    this.querySelector(".nav-icon").classList.toggle("open");
                     break;
                 default:
                     this.app.changePath("");
             }
+        }
+
+        private _toggle(e: TapEvent) {
+            this.querySelector(".nav-icon").classList.toggle("open");
+            this.querySelector(".sidebar-container").classList.toggle("open");
         }
     }
 }

@@ -22,6 +22,7 @@ var Rhea;
                             case 2:
                                 query = _a.sent();
                                 this._setInfo(query);
+                                this._setIsBusy(false);
                                 return [2];
                         }
                     });
@@ -38,6 +39,11 @@ var Rhea;
                             type: Object,
                             readOnly: true,
                             notify: true
+                        },
+                        isBusy: {
+                            type: Boolean,
+                            readOnly: true,
+                            value: true
                         }
                     }
                 }, "rhea")

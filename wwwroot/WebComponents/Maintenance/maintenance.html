@@ -1,6 +1,7 @@
 ﻿<dom-module id="rhea-maintenance">
     <template>
         <link rel="stylesheet" href="maintenance.css"/>
+        <vi-spinner hidden="[[!isBusy]]" color="#4682B4"></vi-spinner>
         <vi-scroller class="flex" no-horizontal>
             <rhea-menu-section maintenance="[[maintenance]]"></rhea-menu-section>
             <rhea-page-section query="[[info]]"></rhea-page-section>

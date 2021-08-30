@@ -44,3 +44,15 @@
           margin-right: 10px; }
         :host vi-grid .contact-info .contact-content p {
           color: #fff; }
+
+:host-context([is-tablet]) vi-grid .contact-info {
+  display: block; }
+  :host-context([is-tablet]) vi-grid .contact-info .contact-content {
+    width: 100%;
+    margin-bottom: 10px; }
+
+:host-context([is-phone]) vi-grid .contact-info {
+  display: block; }
+  :host-context([is-phone]) vi-grid .contact-info .contact-content {
+    width: 100%;
+    margin-bottom: 10px; }

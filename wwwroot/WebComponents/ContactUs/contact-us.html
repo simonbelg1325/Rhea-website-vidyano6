@@ -1,6 +1,7 @@
 ﻿<dom-module id="rhea-contact-us">
     <template>
         <link rel="stylesheet" href="contact-us.css"/>
+        <vi-spinner hidden="[[!isBusy]]" color="#4682B4"></vi-spinner>
         <vi-scroller class="flex" no-horizontal>
             <rhea-menu-section contact="[[contact]]"></rhea-menu-section>
             <template is="dom-repeat" items="[[contactInfo.items]]" as="contact">

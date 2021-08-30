@@ -26,6 +26,7 @@ var Rhea;
                                 servicesQuery = _a.sent();
                                 this._setInfo(query);
                                 this._setServices(servicesQuery);
+                                this._setIsBusy(false);
                                 return [2];
                         }
                     });
@@ -52,6 +53,11 @@ var Rhea;
                             type: Object,
                             readOnly: true,
                             notify: true
+                        },
+                        isBusy: {
+                            type: Boolean,
+                            readOnly: true,
+                            value: true
                         }
                     }
                 }, "rhea")

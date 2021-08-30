@@ -1,6 +1,7 @@
 ﻿<dom-module id="rhea-references">
     <template>
         <link rel="stylesheet" href="references.css"/>
+        <vi-spinner hidden="[[!isBusy]]" color="#4682B4"></vi-spinner>
         <vi-scroller class="flex" no-horizontal>
             <rhea-menu-section references="[[references]]"></rhea-menu-section>
             <vi-grid>
