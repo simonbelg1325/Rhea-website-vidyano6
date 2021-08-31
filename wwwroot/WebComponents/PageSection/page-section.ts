@@ -1,7 +1,8 @@
 ﻿namespace Rhea.WebComponents {
     @Vidyano.WebComponents.WebComponent.register({
-        properties: {}
-    }, "rhea")
+        properties: {},
+        mediaQueryAttributes: true
+}, "rhea")
 
     export class PageSection extends Vidyano.WebComponents.WebComponent {
         async attached() {

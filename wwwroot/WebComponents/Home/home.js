@@ -59,7 +59,8 @@ var Rhea;
                             readOnly: true,
                             value: true
                         }
-                    }
+                    },
+                    mediaQueryAttributes: true
                 }, "rhea")
             ], Home);
             return Home;

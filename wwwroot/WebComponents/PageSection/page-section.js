@@ -22,7 +22,8 @@ var Rhea;
             };
             PageSection = __decorate([
                 Vidyano.WebComponents.WebComponent.register({
-                    properties: {}
+                    properties: {},
+                    mediaQueryAttributes: true
                 }, "rhea")
             ], PageSection);
             return PageSection;

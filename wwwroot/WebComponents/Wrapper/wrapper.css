@@ -1,7 +1,7 @@
 ﻿:host {
   display: flex;
   flex-direction: column;
-  --rhea-wrapper-width: 1200px; }
+  --rhea-wrapper-width: 1000px; }
   :host header {
     line-height: 60px;
     height: 60px;
@@ -13,7 +13,7 @@
       z-index: 1;
       padding: 0 24px;
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1000px;
       width: 100%; }
       :host header .main img, :host header .side img {
         height: 60px;
@@ -40,72 +40,72 @@
     :host header .side {
       display: none; }
 
-:host-context([is-tablet]) {
-  --rhea-wrapper-width: 768px; }
-  :host-context([is-tablet]) header .main {
-    display: none; }
-  :host-context([is-tablet]) header .side {
-    display: flex; }
-    :host-context([is-tablet]) header .side .nav-icon {
-      display: flex;
-      padding: 0;
-      margin: 0 1vw;
-      width: 45px;
-      height: 60px;
-      position: relative;
-      transform: rotate(0deg);
-      transition: .5s ease-in-out;
-      cursor: pointer; }
-      :host-context([is-tablet]) header .side .nav-icon span {
-        display: block;
-        position: absolute;
-        height: 6px;
-        width: 100%;
-        background: #4682B4;
-        border-radius: 9px;
-        opacity: 1;
-        left: 0;
-        transform: rotate(0deg);
-        transition: .25s ease-in-out; }
-      :host-context([is-tablet]) header .side .nav-icon span:nth-child(1) {
-        top: 11px; }
-      :host-context([is-tablet]) header .side .nav-icon span:nth-child(2) {
-        top: 25px; }
-      :host-context([is-tablet]) header .side .nav-icon span:nth-child(3) {
-        top: 40px; }
-    :host-context([is-tablet]) header .side .nav-icon.open span:nth-child(1) {
-      top: 26px;
-      transform: rotate(135deg); }
-    :host-context([is-tablet]) header .side .nav-icon.open span:nth-child(2) {
-      opacity: 0;
-      left: -60px; }
-    :host-context([is-tablet]) header .side .nav-icon.open span:nth-child(3) {
-      top: 26px;
-      transform: rotate(-135deg); }
-    :host-context([is-tablet]) header .side .sidebar-container {
-      position: fixed;
-      z-index: 999;
-      width: 100%;
-      height: 100%;
-      background: #fff;
-      align-items: center;
-      top: 0;
-      left: 0;
-      transition: 0.3s ease-in-out;
-      opacity: 0;
-      top: -100%;
-      display: flex;
-      flex-direction: column; }
-    :host-context([is-tablet]) header .side .sidebar-container.open {
-      opacity: 100%;
-      top: 60px; }
+:host-context([is-tablet]) header .main {
+  display: none; }
 
-:host-context([is-phone]) {
-  --rhea-wrapper-width: 370px; }
+:host-context([is-tablet]) header .side {
+  display: flex; }
+  :host-context([is-tablet]) header .side .nav-icon {
+    display: flex;
+    padding: 0;
+    margin: 0 1vw;
+    width: 45px;
+    height: 60px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    :host-context([is-tablet]) header .side .nav-icon span {
+      display: block;
+      position: absolute;
+      height: 6px;
+      width: 100%;
+      background: #4682B4;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out; }
+    :host-context([is-tablet]) header .side .nav-icon span:nth-child(1) {
+      top: 11px; }
+    :host-context([is-tablet]) header .side .nav-icon span:nth-child(2) {
+      top: 25px; }
+    :host-context([is-tablet]) header .side .nav-icon span:nth-child(3) {
+      top: 40px; }
+  :host-context([is-tablet]) header .side .nav-icon.open span:nth-child(1) {
+    top: 26px;
+    transform: rotate(135deg); }
+  :host-context([is-tablet]) header .side .nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px; }
+  :host-context([is-tablet]) header .side .nav-icon.open span:nth-child(3) {
+    top: 26px;
+    transform: rotate(-135deg); }
+  :host-context([is-tablet]) header .side .sidebar-container {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    top: -100%;
+    display: flex;
+    flex-direction: column; }
+  :host-context([is-tablet]) header .side .sidebar-container.open {
+    opacity: 100%;
+    top: 60px; }
+
+:host-context([is-phone]) header {
+  padding: 0 6px; }
   :host-context([is-phone]) header .main {
     display: none; }
   :host-context([is-phone]) header .side {
-    display: flex; }
+    display: flex;
+    padding: 0; }
     :host-context([is-phone]) header .side .nav-icon {
       display: flex;
       padding: 0;

@@ -25,7 +25,8 @@
                 readOnly: true,
                 value: true
             }
-        }
+        },
+        mediaQueryAttributes: true
     }, "rhea")
 
     export class Home extends Vidyano.WebComponents.WebComponent {
