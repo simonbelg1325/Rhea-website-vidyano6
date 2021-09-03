@@ -1,7 +1,7 @@
 ﻿:host {
   display: flex;
   flex-direction: column;
-  --rhea-wrapper-width: 1000px; }
+  --rhea-wrapper-width: 1200px; }
   :host header {
     line-height: 60px;
     height: 60px;
@@ -13,8 +13,7 @@
       z-index: 1;
       padding: 0 24px;
       margin: 0 auto;
-      max-width: 1000px;
-      width: 100%; }
+      max-width: 1200px; }
       :host header .main img, :host header .side img {
         height: 60px;
         margin-right: auto; }
